@@ -1,0 +1,70 @@
+# ！/usr/bin/python
+# -*- coding: utf-8 -*-
+# user:张泽灵  time:2018/2/9 16:53
+
+
+import requests
+from bs4 import BeautifulSoup
+import time
+
+
+def get_links(url):
+    Headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36'}
+    response = requests.get(url, headers=Headers)
+    soup = BeautifulSoup(response.text, 'lxml')
+    content_list = soup.select('div.article > a')
+    link_list = []
+    for content_link in content_list:
+        link = 'https://www.qiushibaike.com' + content_link.get('href')
+        if link not in link_list:
+            link_list.append(link)
+    return link_list
+
+
+def get_content(url):
+    for link in get_links(url):
+        Headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36'}
+        response = requests.get(link, headers=Headers)
+        soup = BeautifulSoup(response.text, 'lxml')
+        try:
+            picture_link = 'http:' + soup.select('div.thumb > img')[0].get('src')
+            print('图片链接:  ', picture_link)
+            response = requests.get(picture_link)
+            content = response.content
+            picture_name = picture_link.split('/')[-1]
+            with open(picture_name, 'wb') as writer:
+                writer.write(content)
+
+        except:
+            pass
+        try:
+            content_list = soup.select('div.content')[0].text.strip()
+            print(content_list)
+            print('\n')
+        except:
+            print('None\n')
+
+
+def get_zhuye_links():
+    url = 'https://www.qiushibaike.com'
+    while True:
+        print(url)
+        get_content(url)
+
+        time.sleep(1)
+        Headers = {
+            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36'}
+        response = requests.get(url, headers=Headers)
+        soup = BeautifulSoup(response.text, 'lxml')
+        try:
+            url = 'https://www.qiushibaike.com' + soup.select('ul.pagination > li > a')[-1].get('href')
+            if url == 'https://www.qiushibaike.com/week/':
+                break
+        except:
+            pass
+
+
+
+get_zhuye_links()
+
+
