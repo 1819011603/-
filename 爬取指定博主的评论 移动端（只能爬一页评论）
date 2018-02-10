@@ -59,3 +59,14 @@ def get_weibo(id, page):
             print(text, ' *******  来源: ', source + '\n')
             get_comment(weibo_id, 1)
             time.sleep(1)
+
+
+if __name__ == '__main__':
+    try:
+        start_page = int(input("输入起始页(>0的正整数)"))
+        end_page = int(input("输入终止页(>0的正整数)")) + 1
+        for i in range(start_page, end_page):
+            get_weibo('1763582395', i)
+    except ValueError as e:
+        print("输入有误", e)
+
