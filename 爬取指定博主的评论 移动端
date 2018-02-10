@@ -1,0 +1,61 @@
+# coding=utf-8
+
+import requests
+import json
+from lxml import html
+import time
+
+
+def get_comment(id, page):
+    headers = {'User_Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36'}
+    url = 'https://m.weibo.cn/api/comments/show?id={}&page={}'.format(id, page)
+    response = requests.get(url, headers=headers)
+    ob_json = json.loads(response.text)
+    data_list = ob_json.get('data')
+    try:
+        hot_data_list = data_list.get('hot_data')
+        for hot_data in hot_data_list:
+            screen_name = hot_data.get('user').get('screen_name')
+            user_id = hot_data.get('user').get('id')
+            text = hot_data.get('text')
+            tree = html.fromstring(text)
+            text = tree.xpath('string(.)')
+            created_at = hot_data.get('created_at')
+            like_counts = hot_data.get('like_counts')
+            source = hot_data.get('source')
+            if source == '':
+                source = u'未知'
+            print(screen_name, ':  ', text, '         **发表时间**:', created_at, '  **点赞数**:', like_counts, '***来源***:', source)
+    except AttributeError as e:
+        print("无hot_comments  ", e)
+
+
+def get_weibo(id, page):
+    headers = {'User_Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36'}
+    url = 'https://m.weibo.cn/api/container/getIndex?uid={}&type=uid&value={}&containerid=107603{}&page={}'.format(id, id, id, page)
+    response = requests.get(url, headers=headers)
+    ob_json = json.loads(response.text)
+    data_list = ob_json.get('data')
+    card_list = data_list.get('cards')
+    for card in card_list:
+        card_type = card.get('card_type')
+        mblog_list = card.get('mblog')
+        if card_type == 9:
+            text = mblog_list.get('text')
+            tree = html.fromstring(text)
+            text = tree.xpath('string(.)')
+            created_at = mblog_list.get('created_at')
+            weibo_id = mblog_list.get('id')
+
+            screen_name = mblog_list.get('user').get('screen_name')
+            attitudes_count = mblog_list.get('attitudes_count')
+            comments_count = mblog_list.get('comments_count')
+            reposts_count = mblog_list.get('reposts_count')
+            source = mblog_list.get('source')
+            if source == '':
+                source = u'未知'
+            print('=======================')
+            print(screen_name, '  发表时间', created_at, '  点赞数', attitudes_count, '  评论数', comments_count, '  转发数', reposts_count,'**来源**:', source)
+            print(text, ' *******  来源: ', source + '\n')
+            get_comment(weibo_id, 1)
+            time.sleep(1)
