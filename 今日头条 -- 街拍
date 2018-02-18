@@ -1,0 +1,144 @@
+# encoding=utf-8
+import re
+import os
+from _md5 import md5
+import requests
+import json
+from requests.exceptions import RequestException
+from multiprocessing import Pool
+
+# MONGO_URL = 'localhost'
+# MONGO_DB = 'toutiao'
+# MONGO_TABLE = 'toutiao'
+GROUP_START = 1
+GROUP_END = 3
+KEYWORD = '街拍'
+
+# AJAX即“Asynchronous Javascript And XML”（异步JavaScript和XML），是指一种创建交互式网页应用的网页开发技术
+# AJAX 是一种用于创建快速动态网页的技术。
+# 通过在后台与服务器进行少量数据交换，AJAX 可以使网页实现异步更新。这意味着可以在不重新加载整个网页的情况下，对网页的某部分进行更新。
+# 传统的网页（不使用 AJAX）如果需要更新内容，必须重载整个网页页面（html页面）
+
+
+# 分析Ajax的网页(XHR)
+# 分析街头美拍详细页面的网页组成
+# 分析索引页内容
+# 下载图片及保存数据库
+# 开启循环和多进程
+
+
+# 首先获取动态加载的标签  一直往下加载重复出现的就是  随意点其中一个
+# 再获取这个标签的url  观察url的组成部分（在headers中）
+# 构造url的参数部分 获取请求  请求成功(2XX)返回其文本  失败则打印其网页并返回None
+def get_page_html(offset, keyword, headers):
+    url = 'https://www.toutiao.com/search_content/?'
+    dic = {
+        'offset': offset,
+        'format': 'json',
+        'keyword': keyword,
+        'autoload': 'true',
+        'count': 20,
+        'cur_tab': 1
+    }
+    response = requests.get(url, params=dic, headers=headers, timeout=3)  # param表示参数部分
+    # 以一个字典来传递这些参数 如果字典中存在None的值，是不会添加到url请求中的
+    # 在某些get请求中，需要辨别用户身份，因此会需要在请求中发送cookie内容，如某些需要用户登录才能访问的页面
+    try:
+        if 200 <= response.status_code < 300:  # 查看状态码是2XX   并返回其文本格式
+            return response.text
+        else:  # 请求失败
+            print('请求详情页失败', url)
+            return None
+    except RequestException:
+        print('异常发生 请求失败')
+        return None
+
+
+def get_html(url, headers):
+    try:
+        res = requests.get(url, headers=headers)
+        if res.status_code != 200:
+            print('请求详情页失败')
+            return None
+        print('请求详情页成功')
+        return res.text
+    except RequestException:
+        print('异常发生请求失败')
+        return None
+
+
+# 将字典形式的str格式利用json.loads()转化为字典格式
+def parse_html(html):
+    if html:
+        ob_json = json.loads(html, 'lxml')
+        data = ob_json.get('data')  # 获取dict不太好观察  从网页中直接观察出来是最好的 实在不行循环遍历输出
+        for item in data:
+            article_url = item.get('article_url')
+            if article_url:  # 删除那些为空的url  要不然会报错
+                yield article_url
+
+
+# format() os.getcwd 获取当前目录的工作路径
+def save_image(content):
+    file_path = '{0}/{1}.{2}'.format(os.getcwd() + '/picture', md5(content).hexdigest(), 'jpg')
+    if not os.path.exists(file_path):  # 如果路径不存在
+        with open(file_path, 'wb') as f:
+            f.write(content)
+            f.close()
+
+
+def download_image(url):
+    print('downloading ', url)
+    try:
+        response = requests.get(url)
+        if response.status_code == 200:
+            save_image(response.content)
+        return None
+    except RequestException:
+        print('save photo error', url)
+    return None
+
+
+def parse_pic_html(html):
+    try:
+        res = r"title: '(.*?)',"
+        title = re.findall(res, html)[0]
+        res = r"content: '(.*?)'"
+        content = re.findall(res, html)[0].split(';')
+        for item in content:
+            if 'http://' in item:
+                artical_pic = item[:-5]
+                download_image(artical_pic)
+    except IndexError:
+        res = r'gallery: JSON\.parse\("(.*?)"\)'
+        # gallery = re.search(res, html)
+        # gallery = gallery.group(1)
+        # gallery = re.sub(r'\\', '', gallery)
+        artical_pic = re.findall(res, html)
+        if artical_pic:
+            artical_pic = artical_pic[0]
+            artical_pic = re.sub(r'\\', '', artical_pic)
+            ob_json = json.loads(artical_pic)
+            sub_images = ob_json.get('sub_images')
+            for item in sub_images:
+                it = item.get('url')
+                if it:
+                    download_image(it)
+
+
+def main(offest):
+    headers = {
+        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36'}
+
+    html = get_page_html(offest, KEYWORD, headers)
+    for url in parse_html(html):
+        response = requests.get(url, headers=headers)
+        html = response.text
+        parse_pic_html(html)
+
+
+if __name__ == '__main__':
+    groups = [x * 20 for x in range(GROUP_START, GROUP_END + 1)]
+    # 由于Pool的默认大小是CPU的核数，如果你不幸拥有8核CPU，你要提交至少9个子进程才能看到上面的等待效果。
+    pool = Pool()
+    pool.map(main, groups)
