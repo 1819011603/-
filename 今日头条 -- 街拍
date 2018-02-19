@@ -2,17 +2,22 @@
 import re
 import os
 from _md5 import md5
+
+import pymongo
 import requests
 import json
 from requests.exceptions import RequestException
 from multiprocessing import Pool
 
-# MONGO_URL = 'localhost'
-# MONGO_DB = 'toutiao'
-# MONGO_TABLE = 'toutiao'
+MONGO_URL = 'localhost'
+MONGO_DB = 'toutiao'
+MONGO_TABLE = 'toutiao'
 GROUP_START = 1
-GROUP_END = 3
+GROUP_END = 1
 KEYWORD = '街拍'
+client = pymongo.MongoClient(MONGO_URL, connect=False)
+db = client[MONGO_DB]
+
 
 # AJAX即“Asynchronous Javascript And XML”（异步JavaScript和XML），是指一种创建交互式网页应用的网页开发技术
 # AJAX 是一种用于创建快速动态网页的技术。
@@ -78,6 +83,13 @@ def parse_html(html):
                 yield article_url
 
 
+def save_to_mongo(result):
+    if db[MONGO_TABLE].insert(result):
+        print('save to mongoDB sucessfully',result)
+        return True
+    return False
+
+
 # format() os.getcwd 获取当前目录的工作路径
 def save_image(content):
     file_path = '{0}/{1}.{2}'.format(os.getcwd() + '/picture', md5(content).hexdigest(), 'jpg')
@@ -99,16 +111,26 @@ def download_image(url):
     return None
 
 
-def parse_pic_html(html):
+def parse_pic_html(html, url):
     try:
         res = r"title: '(.*?)',"
         title = re.findall(res, html)[0]
+    except IndexError:
+        title = None
+    try:
         res = r"content: '(.*?)'"
         content = re.findall(res, html)[0].split(';')
+        image = []
         for item in content:
             if 'http://' in item:
                 artical_pic = item[:-5]
+                image.append(artical_pic)
                 download_image(artical_pic)
+        return {
+            'title': title,
+            'image': image,
+            'url': url
+        }
     except IndexError:
         res = r'gallery: JSON\.parse\("(.*?)"\)'
         # gallery = re.search(res, html)
@@ -124,6 +146,11 @@ def parse_pic_html(html):
                 it = item.get('url')
                 if it:
                     download_image(it)
+            return {
+                'title': title,
+                'url': url,
+                'images': sub_images
+            }
 
 
 def main(offest):
@@ -132,9 +159,10 @@ def main(offest):
 
     html = get_page_html(offest, KEYWORD, headers)
     for url in parse_html(html):
-        response = requests.get(url, headers=headers)
-        html = response.text
-        parse_pic_html(html)
+        html = get_html(url, headers)
+        result = parse_pic_html(html, url)
+        if result:
+            save_to_mongo(result)
 
 
 if __name__ == '__main__':
