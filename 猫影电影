@@ -1,0 +1,73 @@
+# coding=utf-8
+import json
+import re
+
+import pymongo
+import requests
+from requests.exceptions import RequestException
+from multiprocessing import Pool
+MONGO_URL = 'localhost'
+MONGO_DB = 'toutiao'
+MONGO_TABLE = 'maoyin'
+
+KEYWORD = '街拍'
+client = pymongo.MongoClient(MONGO_URL, connect=False)
+db = client[MONGO_DB]
+
+
+
+def save_to_mongo(result):
+    if db[MONGO_TABLE].insert(result):
+        print('save to mongoDB sucessfully',result)
+        return True
+    return False
+
+
+def get_one_page(url):
+    try:
+        response = requests.get(url)
+        if response.status_code == 200:
+            return response.text
+        else:
+            return None
+    except RequestException:
+        return None
+
+
+def parse_one_page(html):
+    if html:
+        pattern = re.compile('<dd>.*?board-index.*?">(\d+)</i>.*?data-src="(.*?)".*?name"><a'
+                             + ' href="(.*?)" title="(.*?)".*?</a>'
+                             + '.*?star">(.*?)</p>.*?releasetime">(.*?)</p>.*?integer">'
+                               + '(.*?)</i>.*?fraction">(.*?)</i>.*?</dd>', re.S)
+        results = re.findall(pattern, html)
+        for result in results:
+            yield {
+                'board-index': result[0],
+                'picture_link': result[1],
+                'film_link': 'http://maoyan.com' + result[2],
+                'title': result[3],
+                'star': result[4].strip()[3:],
+                'release': result[5][5:],
+                'score': result[-2]+result[-1]
+            }
+
+
+def write_to_content(content):
+    with open('result.txt', 'a+', encoding='utf-8') as f:
+        f.writelines(json.dumps(content, ensure_ascii=False)+'\n\n')
+        f.close()
+
+
+def main(offset):
+    url = 'http://maoyan.com/board/4?offset=' + str(offset)
+    html = get_one_page(url)
+    for item in parse_one_page(html):
+        print(item)
+        save_to_mongo(item)
+
+
+if __name__ == '__main__':
+    groups = [i*10 for i in range(10)]
+    pool = Pool()
+    pool.map(main, groups)
