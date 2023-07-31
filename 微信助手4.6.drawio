@@ -1,9 +1,46 @@
-<mxfile host="app.diagrams.net" modified="2023-07-31T07:55:04.072Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36" version="21.6.6" etag="xMEc3iPcmYAztTpcM5p_" type="github">
+<mxfile host="app.diagrams.net" modified="2023-07-31T10:27:36.605Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36" etag="xaM8T09jNUYBEKKmy2-x" version="21.6.6" type="github">
   <diagram name="第 1 页" id="5sO-eyZ9yIOiTwPVTII6">
-    <mxGraphModel>
+    <mxGraphModel dx="1194" dy="625" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="YDXkEG3i8lidJWcskvT1-11" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="YDXkEG3i8lidJWcskvT1-6" target="YDXkEG3i8lidJWcskvT1-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="YDXkEG3i8lidJWcskvT1-27" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="YDXkEG3i8lidJWcskvT1-6">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="303" y="240" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="YDXkEG3i8lidJWcskvT1-6" value="做过/未做过" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="103" y="210" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="YDXkEG3i8lidJWcskvT1-13" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="YDXkEG3i8lidJWcskvT1-10" target="YDXkEG3i8lidJWcskvT1-12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="YDXkEG3i8lidJWcskvT1-16" value="........." style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="YDXkEG3i8lidJWcskvT1-13">
+          <mxGeometry x="-0.075" y="-4" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="YDXkEG3i8lidJWcskvT1-10" value="等于/不等于" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="103" y="350" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="YDXkEG3i8lidJWcskvT1-15" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="YDXkEG3i8lidJWcskvT1-12" target="YDXkEG3i8lidJWcskvT1-14">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="YDXkEG3i8lidJWcskvT1-12" value="等于/不等于" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="103" y="490" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="YDXkEG3i8lidJWcskvT1-14" value="&amp;gt;或&amp;lt;" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="103" y="630" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="YDXkEG3i8lidJWcskvT1-28" value="未做过，需要，最后处理" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="303" y="225" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="YDXkEG3i8lidJWcskvT1-29" value="反向筛选" style="html=1;shadow=0;dashed=0;align=center;verticalAlign=middle;shape=mxgraph.arrows2.arrow;dy=0.6;dx=40;direction=north;notch=0;" vertex="1" parent="1">
+          <mxGeometry x="20" y="200" width="70" height="490" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
