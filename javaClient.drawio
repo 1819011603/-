@@ -1,9 +1,36 @@
-<mxfile host="app.diagrams.net" modified="2023-08-19T10:23:49.675Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36" version="21.6.8" etag="5kxur4jYlNmajRWR3mEt" type="github">
+<mxfile host="app.diagrams.net" modified="2023-08-19T13:37:24.751Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36" etag="AkCUorjGCYWBZuzLfxYl" version="21.6.8" type="github">
   <diagram name="第 1 页" id="hfmUWymTaNQccyx6NpWl">
-    <mxGraphModel>
+    <mxGraphModel dx="1046" dy="514" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="AlUWY4Qr4lEPv8KhQEpm-3" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="AlUWY4Qr4lEPv8KhQEpm-1" target="AlUWY4Qr4lEPv8KhQEpm-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="AlUWY4Qr4lEPv8KhQEpm-1" value="前端启动" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="80" y="220" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="AlUWY4Qr4lEPv8KhQEpm-5" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="AlUWY4Qr4lEPv8KhQEpm-2" target="AlUWY4Qr4lEPv8KhQEpm-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="AlUWY4Qr4lEPv8KhQEpm-2" value="FrontStart: 实现ApplicationRunner接口，自身被spring管理" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="280" y="220" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="AlUWY4Qr4lEPv8KhQEpm-7" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="AlUWY4Qr4lEPv8KhQEpm-4" target="AlUWY4Qr4lEPv8KhQEpm-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="AlUWY4Qr4lEPv8KhQEpm-4" value="FrontFlowHandler: 交给其初始化Netty，前端数据流向处理器，包含inBound和outBound方法" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="480" y="220" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="AlUWY4Qr4lEPv8KhQEpm-9" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="AlUWY4Qr4lEPv8KhQEpm-6" target="AlUWY4Qr4lEPv8KhQEpm-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="AlUWY4Qr4lEPv8KhQEpm-6" value="FrontServer：启动Netty，绑定FrontWebSocketHandler&lt;span style=&quot;background-color: initial;&quot;&gt;作为入栈处理器，处理从前端来的信息&lt;/span&gt;" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="680" y="220" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="AlUWY4Qr4lEPv8KhQEpm-8" value="FrontFlowHandler处理业务请求，handHttpRequest方法处理http握手请求" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="880" y="220" width="120" height="60" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
