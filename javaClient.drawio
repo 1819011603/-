@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2023-08-19T13:37:24.751Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36" etag="AkCUorjGCYWBZuzLfxYl" version="21.6.8" type="github">
+<mxfile host="app.diagrams.net" modified="2023-08-19T13:55:19.810Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36" etag="1UX2pUtB4AD6RX8cBGcn" version="21.6.8" type="github">
   <diagram name="第 1 页" id="hfmUWymTaNQccyx6NpWl">
-    <mxGraphModel dx="1046" dy="514" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+    <mxGraphModel dx="1395" dy="685" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -28,8 +28,20 @@
         <mxCell id="AlUWY4Qr4lEPv8KhQEpm-6" value="FrontServer：启动Netty，绑定FrontWebSocketHandler&lt;span style=&quot;background-color: initial;&quot;&gt;作为入栈处理器，处理从前端来的信息&lt;/span&gt;" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
           <mxGeometry x="680" y="220" width="120" height="60" as="geometry" />
         </mxCell>
+        <mxCell id="AlUWY4Qr4lEPv8KhQEpm-11" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="AlUWY4Qr4lEPv8KhQEpm-8" target="AlUWY4Qr4lEPv8KhQEpm-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="AlUWY4Qr4lEPv8KhQEpm-8" value="FrontFlowHandler处理业务请求，handHttpRequest方法处理http握手请求" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
           <mxGeometry x="880" y="220" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="AlUWY4Qr4lEPv8KhQEpm-13" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="AlUWY4Qr4lEPv8KhQEpm-10" target="AlUWY4Qr4lEPv8KhQEpm-12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="AlUWY4Qr4lEPv8KhQEpm-10" value="frontFlowHandler:根据cmdId获取对应的前端任务处理器AbstractFrontTask. 在FrontHandlerConfig中维护映射关系" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="1080" y="220" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="AlUWY4Qr4lEPv8KhQEpm-12" value="FrontHandlerConfig： 包含forward&lt;span style=&quot;background-color: initial;&quot;&gt;转发命令、&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;上传文件命令、&lt;/span&gt;获取所有逆向状态配置命令、前端登陆、前端退出、获取mqtt连接的状态、前端传递命令然后把javaclient和逆向进程杀掉、只退出javaclient，不退出微信、上报指标、上报机器人可用、上报语音消息" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="1058" y="384" width="164" height="181" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
