@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2023-08-19T14:32:19.041Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36" etag="6h7qMKtHWrtGDwOguu75" version="21.6.8" type="github">
+<mxfile host="app.diagrams.net" modified="2023-08-19T14:42:17.437Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36" etag="AoGm5HZps7STc7VEEWok" version="21.6.8" type="github">
   <diagram name="第 1 页" id="hfmUWymTaNQccyx6NpWl">
-    <mxGraphModel dx="1395" dy="685" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+    <mxGraphModel dx="2564" dy="685" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -52,14 +52,20 @@
         <mxCell id="AlUWY4Qr4lEPv8KhQEpm-20" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="AlUWY4Qr4lEPv8KhQEpm-15" target="AlUWY4Qr4lEPv8KhQEpm-19">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="AlUWY4Qr4lEPv8KhQEpm-15" value="ForwardTask转发命令:根据wxID获取逆向，或者根据channelId获取逆向 ，FlowSourceEnum.FRONT标记前端发送给逆向。类型有发送消息、踢人、备注、获取群聊好友信息、获取好友列表、将数据内容包装到clientTask对象中，" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+        <mxCell id="AlUWY4Qr4lEPv8KhQEpm-15" value="ForwardTask发送消息命令:根据wxID获取逆向，或者根据channelId获取逆向 ，FlowSourceEnum.FRONT标记前端发送给逆向。类型有发送消息、踢人、备注、获取群聊好友信息、获取好友列表、将数据内容包装到clientTask对象中，" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
           <mxGeometry x="611" y="384.75" width="327" height="180.25" as="geometry" />
+        </mxCell>
+        <mxCell id="AlUWY4Qr4lEPv8KhQEpm-22" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="AlUWY4Qr4lEPv8KhQEpm-17" target="AlUWY4Qr4lEPv8KhQEpm-21">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="AlUWY4Qr4lEPv8KhQEpm-17" value="使用dispatcherCenter.inBound(request.getChannelId(), request.getWxid(), JSON.toJSONString(clientTask));交给分发中心去处理。" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
           <mxGeometry x="239" y="373.93" width="280.5" height="201.13" as="geometry" />
         </mxCell>
         <mxCell id="AlUWY4Qr4lEPv8KhQEpm-19" value="以发送消息中的文件为例，建立了一个url和文件的缓存池url2PathCache，" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
           <mxGeometry x="679.25" y="701" width="190.5" height="172.88" as="geometry" />
+        </mxCell>
+        <mxCell id="AlUWY4Qr4lEPv8KhQEpm-21" value="发送消息命令比较特殊，需要设置类型为sendmsg_，其他类型无需设置。通过WorkWxRelation4TaskAndCallback.&lt;br&gt;getByTaskType(type);获取逆向成功返回的三条消息的类型，企微为recvmsg、sendmsg_、msgreport" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="-41.25" y="444.5" width="201.25" height="160.51" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
