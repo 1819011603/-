@@ -1,71 +1,71 @@
-<mxfile host="app.diagrams.net" modified="2023-08-19T14:51:11.378Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36" etag="nLc_uUZK-nmV-lVXTP8M" version="21.6.8" type="github">
+<mxfile host="app.diagrams.net" modified="2023-08-19T14:52:06.730Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36" etag="EN1tIidg-BEu5NQU88bE" version="21.6.8" type="github">
   <diagram name="第 1 页" id="hfmUWymTaNQccyx6NpWl">
-    <mxGraphModel dx="2564" dy="685" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+    <mxGraphModel dx="1674" dy="822" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="AlUWY4Qr4lEPv8KhQEpm-3" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="AlUWY4Qr4lEPv8KhQEpm-1" target="AlUWY4Qr4lEPv8KhQEpm-2">
+        <mxCell id="AlUWY4Qr4lEPv8KhQEpm-3" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="AlUWY4Qr4lEPv8KhQEpm-1" target="AlUWY4Qr4lEPv8KhQEpm-2" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="AlUWY4Qr4lEPv8KhQEpm-1" value="前端启动" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="AlUWY4Qr4lEPv8KhQEpm-1" value="前端启动" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="17" y="220" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="AlUWY4Qr4lEPv8KhQEpm-5" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="AlUWY4Qr4lEPv8KhQEpm-2" target="AlUWY4Qr4lEPv8KhQEpm-4">
+        <mxCell id="AlUWY4Qr4lEPv8KhQEpm-5" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="AlUWY4Qr4lEPv8KhQEpm-2" target="AlUWY4Qr4lEPv8KhQEpm-4" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="AlUWY4Qr4lEPv8KhQEpm-2" value="FrontStart: 实现ApplicationRunner接口，自身被spring管理" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+        <mxCell id="AlUWY4Qr4lEPv8KhQEpm-2" value="FrontStart: 实现ApplicationRunner接口，自身被spring管理" style="whiteSpace=wrap;html=1;rounded=1;" parent="1" vertex="1">
           <mxGeometry x="217" y="220" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="AlUWY4Qr4lEPv8KhQEpm-7" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="AlUWY4Qr4lEPv8KhQEpm-4" target="AlUWY4Qr4lEPv8KhQEpm-6">
+        <mxCell id="AlUWY4Qr4lEPv8KhQEpm-7" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="AlUWY4Qr4lEPv8KhQEpm-4" target="AlUWY4Qr4lEPv8KhQEpm-6" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="AlUWY4Qr4lEPv8KhQEpm-4" value="FrontFlowHandler: 交给其初始化Netty，前端数据流向处理器，包含inBound和outBound方法" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+        <mxCell id="AlUWY4Qr4lEPv8KhQEpm-4" value="FrontFlowHandler: 交给其初始化Netty，前端数据流向处理器，包含inBound和outBound方法" style="whiteSpace=wrap;html=1;rounded=1;" parent="1" vertex="1">
           <mxGeometry x="417" y="220" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="AlUWY4Qr4lEPv8KhQEpm-9" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="AlUWY4Qr4lEPv8KhQEpm-6" target="AlUWY4Qr4lEPv8KhQEpm-8">
+        <mxCell id="AlUWY4Qr4lEPv8KhQEpm-9" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="AlUWY4Qr4lEPv8KhQEpm-6" target="AlUWY4Qr4lEPv8KhQEpm-8" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="AlUWY4Qr4lEPv8KhQEpm-6" value="FrontServer：启动Netty，绑定FrontWebSocketHandler&lt;span style=&quot;background-color: initial;&quot;&gt;作为入栈处理器，处理从前端来的信息&lt;/span&gt;" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+        <mxCell id="AlUWY4Qr4lEPv8KhQEpm-6" value="FrontServer：启动Netty，绑定FrontWebSocketHandler&lt;span style=&quot;background-color: initial;&quot;&gt;作为入栈处理器，处理从前端来的信息&lt;/span&gt;" style="whiteSpace=wrap;html=1;rounded=1;" parent="1" vertex="1">
           <mxGeometry x="617" y="220" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="AlUWY4Qr4lEPv8KhQEpm-11" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="AlUWY4Qr4lEPv8KhQEpm-8" target="AlUWY4Qr4lEPv8KhQEpm-10">
+        <mxCell id="AlUWY4Qr4lEPv8KhQEpm-11" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="AlUWY4Qr4lEPv8KhQEpm-8" target="AlUWY4Qr4lEPv8KhQEpm-10" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="AlUWY4Qr4lEPv8KhQEpm-8" value="FrontFlowHandler处理业务请求，handHttpRequest方法处理http握手请求" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+        <mxCell id="AlUWY4Qr4lEPv8KhQEpm-8" value="FrontFlowHandler处理业务请求，handHttpRequest方法处理http握手请求" style="whiteSpace=wrap;html=1;rounded=1;" parent="1" vertex="1">
           <mxGeometry x="817" y="220" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="AlUWY4Qr4lEPv8KhQEpm-13" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="AlUWY4Qr4lEPv8KhQEpm-10" target="AlUWY4Qr4lEPv8KhQEpm-12">
+        <mxCell id="AlUWY4Qr4lEPv8KhQEpm-13" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="AlUWY4Qr4lEPv8KhQEpm-10" target="AlUWY4Qr4lEPv8KhQEpm-12" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="AlUWY4Qr4lEPv8KhQEpm-10" value="frontFlowHandler:根据cmdId获取对应的前端任务处理器AbstractFrontTask.这些AbstractFrontTask是将前端命令发送给逆向，再将逆向的消息通过sendMessageToFront方法&lt;span style=&quot;background-color: initial;&quot;&gt;返回给前端。&lt;/span&gt;&lt;br&gt;在FrontHandlerConfig中维护映射关系" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+        <mxCell id="AlUWY4Qr4lEPv8KhQEpm-10" value="frontFlowHandler:根据cmdId获取对应的前端任务处理器AbstractFrontTask.这些AbstractFrontTask是将前端命令发送给逆向，再将逆向的消息通过sendMessageToFront方法&lt;span style=&quot;background-color: initial;&quot;&gt;返回给前端。&lt;/span&gt;&lt;br&gt;在FrontHandlerConfig中维护映射关系" style="whiteSpace=wrap;html=1;rounded=1;" parent="1" vertex="1">
           <mxGeometry x="990.25" y="173.75" width="173.5" height="152.5" as="geometry" />
         </mxCell>
-        <mxCell id="AlUWY4Qr4lEPv8KhQEpm-16" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="AlUWY4Qr4lEPv8KhQEpm-12" target="AlUWY4Qr4lEPv8KhQEpm-15">
+        <mxCell id="AlUWY4Qr4lEPv8KhQEpm-16" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="AlUWY4Qr4lEPv8KhQEpm-12" target="AlUWY4Qr4lEPv8KhQEpm-15" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="AlUWY4Qr4lEPv8KhQEpm-12" value="FrontHandlerConfig： 包含forward&lt;span style=&quot;background-color: initial;&quot;&gt;转发命令、&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;上传文件命令、&lt;/span&gt;获取所有逆向状态配置命令、前端登陆、前端退出、获取mqtt连接的状态、前端传递命令然后把javaclient和逆向进程杀掉、只退出javaclient，不退出微信、上报指标、上报机器人可用、上报语音消息" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+        <mxCell id="AlUWY4Qr4lEPv8KhQEpm-12" value="FrontHandlerConfig： 包含forward&lt;span style=&quot;background-color: initial;&quot;&gt;转发命令、&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;上传文件命令、&lt;/span&gt;获取所有逆向状态配置命令、前端登陆、前端退出、获取mqtt连接的状态、前端传递命令然后把javaclient和逆向进程杀掉、只退出javaclient，不退出微信、上报指标、上报机器人可用、上报语音消息" style="whiteSpace=wrap;html=1;rounded=1;" parent="1" vertex="1">
           <mxGeometry x="995" y="384" width="164" height="181" as="geometry" />
         </mxCell>
-        <mxCell id="AlUWY4Qr4lEPv8KhQEpm-18" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="AlUWY4Qr4lEPv8KhQEpm-15" target="AlUWY4Qr4lEPv8KhQEpm-17">
+        <mxCell id="AlUWY4Qr4lEPv8KhQEpm-18" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="AlUWY4Qr4lEPv8KhQEpm-15" target="AlUWY4Qr4lEPv8KhQEpm-17" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="AlUWY4Qr4lEPv8KhQEpm-20" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="AlUWY4Qr4lEPv8KhQEpm-15" target="AlUWY4Qr4lEPv8KhQEpm-19">
+        <mxCell id="AlUWY4Qr4lEPv8KhQEpm-20" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="AlUWY4Qr4lEPv8KhQEpm-15" target="AlUWY4Qr4lEPv8KhQEpm-19" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="AlUWY4Qr4lEPv8KhQEpm-15" value="ForwardTask发送消息命令:根据wxID获取逆向，或者根据channelId获取逆向 ，FlowSourceEnum.FRONT标记前端发送给逆向。类型有发送消息、踢人、备注、获取群聊好友信息、获取好友列表、将数据内容包装到clientTask对象中，" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+        <mxCell id="AlUWY4Qr4lEPv8KhQEpm-15" value="ForwardTask发送消息命令:根据wxID获取逆向，或者根据channelId获取逆向 ，FlowSourceEnum.FRONT标记前端发送给逆向。类型有发送消息、踢人、备注、获取群聊好友信息、获取好友列表、将数据内容包装到clientTask对象中，" style="whiteSpace=wrap;html=1;rounded=1;" parent="1" vertex="1">
           <mxGeometry x="611" y="384.75" width="327" height="180.25" as="geometry" />
         </mxCell>
-        <mxCell id="AlUWY4Qr4lEPv8KhQEpm-22" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="AlUWY4Qr4lEPv8KhQEpm-17" target="AlUWY4Qr4lEPv8KhQEpm-21">
+        <mxCell id="AlUWY4Qr4lEPv8KhQEpm-22" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="AlUWY4Qr4lEPv8KhQEpm-17" target="AlUWY4Qr4lEPv8KhQEpm-21" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="AlUWY4Qr4lEPv8KhQEpm-17" value="使用dispatcherCenter.inBound(request.getChannelId(), request.getWxid(), JSON.toJSONString(clientTask));交给分发中心去处理。" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+        <mxCell id="AlUWY4Qr4lEPv8KhQEpm-17" value="使用dispatcherCenter.inBound(request.getChannelId(), request.getWxid(), JSON.toJSONString(clientTask));交给分发中心去处理。" style="whiteSpace=wrap;html=1;rounded=1;" parent="1" vertex="1">
           <mxGeometry x="239" y="373.93" width="280.5" height="201.13" as="geometry" />
         </mxCell>
-        <mxCell id="AlUWY4Qr4lEPv8KhQEpm-19" value="以发送消息中的文件为例，建立了一个url和文件的缓存池url2PathCache，" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+        <mxCell id="AlUWY4Qr4lEPv8KhQEpm-19" value="以发送消息中的文件为例，建立了一个url和文件的缓存池url2PathCache，" style="whiteSpace=wrap;html=1;rounded=1;" parent="1" vertex="1">
           <mxGeometry x="679.25" y="701" width="190.5" height="172.88" as="geometry" />
         </mxCell>
-        <mxCell id="AlUWY4Qr4lEPv8KhQEpm-21" value="processInBoundTask方法：发送消息命令比较特殊，需要设置类型为sendmsg_，其他类型无需设置。通过WorkWxRelation4TaskAndCallback.&lt;br&gt;getByTaskType(type);获取逆向成功返回的三条消息的类型，企微为recvmsg、sendmsg_、msgreport。微信为msgreport、sendmessage、scenesendmsg，将信息包装为GalaxyTaskStatus对象，并使用inBoundAct给逆向发送消息，过程是根据wxID+（企微或微信）进行上锁的，所以其实企微是不会影响微信的" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
-          <mxGeometry x="-9" y="382.31" width="204.25" height="185.13" as="geometry" />
+        <mxCell id="AlUWY4Qr4lEPv8KhQEpm-21" value="processInBoundTask方法：发送消息命令比较特殊，需要设置类型为sendmsg_，其他类型无需设置。通过WorkWxRelation4TaskAndCallback.&lt;br&gt;getByTaskType(type);获取逆向成功返回的三条消息的类型，企微为recvmsg、sendmsg_、msgreport。微信为msgreport、sendmessage、scenesendmsg，将信息包装为GalaxyTaskStatus对象，并使用inBoundAct给逆向发送消息，过程是根据wxID+（企微或微信）进行上锁的，所以其实企微是不会影响微信的" style="whiteSpace=wrap;html=1;rounded=1;" parent="1" vertex="1">
+          <mxGeometry x="10" y="382.31" width="204.25" height="185.13" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
