@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-08-19T14:46:22.264Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36" etag="A-hjyHX_-7R-gC8iQ4pH" version="21.6.8" type="github">
+<mxfile host="app.diagrams.net" modified="2023-08-19T14:51:11.378Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36" etag="nLc_uUZK-nmV-lVXTP8M" version="21.6.8" type="github">
   <diagram name="第 1 页" id="hfmUWymTaNQccyx6NpWl">
     <mxGraphModel dx="2564" dy="685" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
       <root>
@@ -65,7 +65,7 @@
           <mxGeometry x="679.25" y="701" width="190.5" height="172.88" as="geometry" />
         </mxCell>
         <mxCell id="AlUWY4Qr4lEPv8KhQEpm-21" value="processInBoundTask方法：发送消息命令比较特殊，需要设置类型为sendmsg_，其他类型无需设置。通过WorkWxRelation4TaskAndCallback.&lt;br&gt;getByTaskType(type);获取逆向成功返回的三条消息的类型，企微为recvmsg、sendmsg_、msgreport。微信为msgreport、sendmessage、scenesendmsg，将信息包装为GalaxyTaskStatus对象，并使用inBoundAct给逆向发送消息，过程是根据wxID+（企微或微信）进行上锁的，所以其实企微是不会影响微信的" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
-          <mxGeometry x="-19" y="370" width="204.25" height="185.13" as="geometry" />
+          <mxGeometry x="-9" y="382.31" width="204.25" height="185.13" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
