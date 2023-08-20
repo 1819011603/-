@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2023-08-20T15:12:26.441Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36" etag="VaruPSowaTd9PwbFj_0K" version="21.6.8" type="github">
+<mxfile host="app.diagrams.net" modified="2023-08-20T15:20:38.216Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36" etag="fcr1ODRm-91v2YVGR08w" version="21.6.8" type="github">
   <diagram name="第 1 页" id="J8AwHqCBefN4a8W1EPn6">
-    <mxGraphModel dx="1674" dy="799" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+    <mxGraphModel dx="1674" dy="767" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -401,11 +401,52 @@
         <mxCell id="CwKObZl5wt-i1WYEYqwP-145" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="CwKObZl5wt-i1WYEYqwP-142" target="CwKObZl5wt-i1WYEYqwP-144">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
+        <mxCell id="CwKObZl5wt-i1WYEYqwP-147" value="successIpcConnect" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="CwKObZl5wt-i1WYEYqwP-145">
+          <mxGeometry x="-0.025" y="2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
         <mxCell id="CwKObZl5wt-i1WYEYqwP-142" value="逆向的消息是如何返回的，使用AsyncSelectTask进行无限监听数据获取的" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="2328.75" y="1112" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="CwKObZl5wt-i1WYEYqwP-144" value="" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="2328.75" y="1252" width="120" height="60" as="geometry" />
+        <mxCell id="CwKObZl5wt-i1WYEYqwP-149" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="CwKObZl5wt-i1WYEYqwP-144" target="CwKObZl5wt-i1WYEYqwP-148">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="CwKObZl5wt-i1WYEYqwP-144" value="调用&amp;nbsp;ClibraryImpl.IpcClientRecvMessage获取逆向的数据" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="2288.13" y="1252" width="201.25" height="118" as="geometry" />
+        </mxCell>
+        <mxCell id="CwKObZl5wt-i1WYEYqwP-151" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="CwKObZl5wt-i1WYEYqwP-148" target="CwKObZl5wt-i1WYEYqwP-150">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="CwKObZl5wt-i1WYEYqwP-148" value="调用ipcService.outBound进行上报" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="2328.755" y="1479" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="CwKObZl5wt-i1WYEYqwP-153" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="CwKObZl5wt-i1WYEYqwP-150" target="CwKObZl5wt-i1WYEYqwP-152">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="CwKObZl5wt-i1WYEYqwP-150" value="DispatchCenter.outBound" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="2528.76" y="1479" width="191.24" height="61" as="geometry" />
+        </mxCell>
+        <mxCell id="CwKObZl5wt-i1WYEYqwP-155" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="CwKObZl5wt-i1WYEYqwP-152" target="CwKObZl5wt-i1WYEYqwP-154">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="CwKObZl5wt-i1WYEYqwP-152" value="以企微举例wkMsgHandlerCenter.&lt;br&gt;outBoundMsg" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="2835.62" y="1479.5" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="CwKObZl5wt-i1WYEYqwP-157" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="CwKObZl5wt-i1WYEYqwP-154" target="CwKObZl5wt-i1WYEYqwP-156">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="CwKObZl5wt-i1WYEYqwP-154" value="1. 使用messageHandler方法来判断逆向任务是否执行成功&lt;br&gt;2.responseMsgHandler&amp;nbsp;返回消息的转换和各种后置操作&lt;br&gt;3.MsgHandlerCenterAbstract.&lt;br&gt;send -&amp;gt;businessHandler" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="3020" y="1449.5" width="234.38" height="120.5" as="geometry" />
+        </mxCell>
+        <mxCell id="CwKObZl5wt-i1WYEYqwP-159" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="CwKObZl5wt-i1WYEYqwP-156" target="CwKObZl5wt-i1WYEYqwP-158">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="CwKObZl5wt-i1WYEYqwP-156" value="调用CloudFlowHanlder.outBound发送消息" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="3302.19" y="1479.75" width="187.81" height="60.25" as="geometry" />
+        </mxCell>
+        <mxCell id="CwKObZl5wt-i1WYEYqwP-158" value="mqttSendService.sendMessage" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="3603.905" y="1479.875" width="120" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
