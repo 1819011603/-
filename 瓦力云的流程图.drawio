@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-08-20T14:56:18.628Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36" etag="lVZO_nWBA4Ljk_p4ajmw" version="21.6.8" type="github">
+<mxfile host="app.diagrams.net" modified="2023-08-20T15:12:26.441Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36" etag="VaruPSowaTd9PwbFj_0K" version="21.6.8" type="github">
   <diagram name="第 1 页" id="J8AwHqCBefN4a8W1EPn6">
     <mxGraphModel dx="1674" dy="799" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
       <root>
@@ -310,9 +310,6 @@
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="CwKObZl5wt-i1WYEYqwP-112" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="CwKObZl5wt-i1WYEYqwP-99" target="CwKObZl5wt-i1WYEYqwP-111">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
         <mxCell id="CwKObZl5wt-i1WYEYqwP-99" value="MQBaseProducer" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="2090" y="810" width="120" height="60" as="geometry" />
         </mxCell>
@@ -326,16 +323,16 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="CwKObZl5wt-i1WYEYqwP-111" value="主题：apollo为mq.parentTopic4Produce，具体值为robot-wx-win-pro，&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;tag:apollo为mqtt.tag，具体值为MQ2MQTT" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="2065" y="950" width="170" height="130" as="geometry" />
+          <mxGeometry x="2930" y="1077" width="170" height="130" as="geometry" />
         </mxCell>
         <mxCell id="CwKObZl5wt-i1WYEYqwP-113" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="CwKObZl5wt-i1WYEYqwP-114" target="CwKObZl5wt-i1WYEYqwP-115">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="CwKObZl5wt-i1WYEYqwP-114" value="robot-wx-win-pro在storm-earth-windows的application-prod.properties文件中" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="2330" y="975" width="155" height="80" as="geometry" />
+          <mxGeometry x="3195" y="1102" width="155" height="80" as="geometry" />
         </mxCell>
         <mxCell id="CwKObZl5wt-i1WYEYqwP-115" value="MqttSendServiceImpl.&lt;br&gt;sendMessage向云端发送数据" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="2642.5" y="985" width="120" height="60" as="geometry" />
+          <mxGeometry x="3507.5" y="1112" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="CwKObZl5wt-i1WYEYqwP-120" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="CwKObZl5wt-i1WYEYqwP-117" target="CwKObZl5wt-i1WYEYqwP-119">
           <mxGeometry relative="1" as="geometry" />
@@ -383,8 +380,32 @@
         <mxCell id="CwKObZl5wt-i1WYEYqwP-133" value="WxSendThreadPoolManager.&lt;br&gt;submitTask(wxId, runnable)使用对应任务的impl的filter和operate方法处理任务" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="3030" y="956" width="195" height="60" as="geometry" />
         </mxCell>
+        <mxCell id="CwKObZl5wt-i1WYEYqwP-139" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="CwKObZl5wt-i1WYEYqwP-135" target="CwKObZl5wt-i1WYEYqwP-138">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="CwKObZl5wt-i1WYEYqwP-135" value="发送给逆向" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="2792.5" y="956" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="CwKObZl5wt-i1WYEYqwP-141" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="CwKObZl5wt-i1WYEYqwP-138" target="CwKObZl5wt-i1WYEYqwP-140">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="CwKObZl5wt-i1WYEYqwP-138" value="逆向执行完毕" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="2592.5" y="956" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="CwKObZl5wt-i1WYEYqwP-143" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="CwKObZl5wt-i1WYEYqwP-140" target="CwKObZl5wt-i1WYEYqwP-142">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="CwKObZl5wt-i1WYEYqwP-140" value="逆向是通过InitIpcTask进行初始化的，&lt;br&gt;是通过IpcStart对象实现ApplicationRunner接口，从而调用&lt;span style=&quot;background-color: initial;&quot;&gt;DispatcherCenter.init方法。进而调用AbstractReverseHandler.initIpc实例化IPC的&lt;/span&gt;" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="2257.5" y="948" width="262.5" height="76" as="geometry" />
+        </mxCell>
+        <mxCell id="CwKObZl5wt-i1WYEYqwP-145" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="CwKObZl5wt-i1WYEYqwP-142" target="CwKObZl5wt-i1WYEYqwP-144">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="CwKObZl5wt-i1WYEYqwP-142" value="逆向的消息是如何返回的，使用AsyncSelectTask进行无限监听数据获取的" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="2328.75" y="1112" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="CwKObZl5wt-i1WYEYqwP-144" value="" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="2328.75" y="1252" width="120" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
