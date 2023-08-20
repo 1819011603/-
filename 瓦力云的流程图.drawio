@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-08-20T13:36:43.064Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36" etag="h_hvf0xoJtl7zhkoMi5o" version="21.6.8" type="github">
+<mxfile host="app.diagrams.net" modified="2023-08-20T13:52:42.337Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36" etag="-2ysN7x9l7S9lSu7GD7n" version="21.6.8" type="github">
   <diagram name="第 1 页" id="J8AwHqCBefN4a8W1EPn6">
     <mxGraphModel dx="1674" dy="799" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
       <root>
@@ -202,7 +202,7 @@
         <mxCell id="CwKObZl5wt-i1WYEYqwP-62" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="CwKObZl5wt-i1WYEYqwP-58" target="CwKObZl5wt-i1WYEYqwP-61">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="CwKObZl5wt-i1WYEYqwP-63" value="handler" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="CwKObZl5wt-i1WYEYqwP-62">
+        <mxCell id="CwKObZl5wt-i1WYEYqwP-63" value="doExecute,&lt;br&gt;handler" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="CwKObZl5wt-i1WYEYqwP-62">
           <mxGeometry x="-0.2593" y="3" relative="1" as="geometry">
             <mxPoint as="offset" />
           </mxGeometry>
@@ -210,8 +210,16 @@
         <mxCell id="CwKObZl5wt-i1WYEYqwP-58" value="MQTTResponseHandle" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="720" y="350" width="130" height="60.5" as="geometry" />
         </mxCell>
-        <mxCell id="CwKObZl5wt-i1WYEYqwP-61" value="" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="530" y="350.5" width="120" height="60" as="geometry" />
+        <mxCell id="CwKObZl5wt-i1WYEYqwP-70" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="CwKObZl5wt-i1WYEYqwP-61" target="CwKObZl5wt-i1WYEYqwP-69">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="CwKObZl5wt-i1WYEYqwP-71" value="主题为：robot-server-task-mock-mq2mqtt" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="CwKObZl5wt-i1WYEYqwP-70">
+          <mxGeometry x="-0.25" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="CwKObZl5wt-i1WYEYqwP-61" value="发送MQ消息" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="480" y="350.5" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="CwKObZl5wt-i1WYEYqwP-68" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="CwKObZl5wt-i1WYEYqwP-64" target="CwKObZl5wt-i1WYEYqwP-67">
           <mxGeometry relative="1" as="geometry" />
@@ -221,6 +229,9 @@
         </mxCell>
         <mxCell id="CwKObZl5wt-i1WYEYqwP-67" value="https://internal-user.gaotu100.com/user/operation/report" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="1200" y="490" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="CwKObZl5wt-i1WYEYqwP-69" value="" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="20" y="350.5" width="120" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
