@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-08-20T08:14:15.651Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36" etag="bKWd9T08CqJVve9y6mwC" version="21.6.8" type="github">
+<mxfile host="app.diagrams.net" modified="2023-08-20T09:17:00.828Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36" etag="ckSzWKWs8dZuavl8yByr" version="21.6.8" type="github">
   <diagram name="第 1 页" id="kBad3HrkxAW1cUTBmK3s">
     <mxGraphModel dx="1674" dy="822" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
       <root>
@@ -40,14 +40,20 @@
         <mxCell id="H_QHMIvUXthHlk2gzlsp-15" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="H_QHMIvUXthHlk2gzlsp-10" target="H_QHMIvUXthHlk2gzlsp-14">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="H_QHMIvUXthHlk2gzlsp-10" value="极速群发：将getSendContentArr()中的RobotWinServerAllMsgBo&lt;span style=&quot;background-color: initial;&quot;&gt;转化为&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;robotWinServerAllMsgPo对象，&lt;/span&gt;msgKey为第几条消息（从0开始）。&lt;br&gt;按照私聊和群聊进行combine，私聊在前，将列表中的content、contentName、cardInfo、type存入到一个list中，目的就是将List&amp;lt;RobotWinServerAllMsgPo&amp;gt;转化为一个RobotWinServerAllMsgPo对象。在这过程当中，生成了一个MsgReceiverInfoPo对象，保存了所有的发送者wxId和type（区分群聊和私聊）和typeIds(消息类型的id)，并生成了一个receiverid（雪花id+当前时间戳），并保存到msg_receiver_info表中。将群聊和私聊的robotWinServerAllMsgPo保存到robotWinServerAllMsgPoList， 将robotWinServerAllMsgPoList所有消息&lt;br&gt;保存到am_win_record_allmsg_new表中， 发送第一条消息，并将robotWinServerAllMsgPoList第一条消息保存到&lt;br&gt;am_win_record，并发送mq消息，主题为ss-msg-bulk-send" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="530" y="180" width="350" height="270" as="geometry" />
+        <mxCell id="H_QHMIvUXthHlk2gzlsp-10" value="极速群发：将getSendContentArr()中的RobotWinServerAllMsgBo&lt;span style=&quot;background-color: initial;&quot;&gt;转化为&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;robotWinServerAllMsgPo对象，&lt;/span&gt;msgKey为第几条消息（从0开始）。&lt;br&gt;按照私聊和群聊进行combine，私聊在前，将列表中的content、contentName、cardInfo、type存入到一个list中，目的就是将List&amp;lt;RobotWinServerAllMsgPo&amp;gt;转化为一个RobotWinServerAllMsgPo对象。在这过程当中，生成了一个MsgReceiverInfoPo对象，保存了所有的发送者wxId和type（区分群聊和私聊）和typeIds(消息类型的id)，并生成了一个receiverid（雪花id+当前时间戳），并保存到msg_receiver_info表中。将群聊和私聊的robotWinServerAllMsgPo保存到robotWinServerAllMsgPoList， 将robotWinServerAllMsgPoList所有消息&lt;br&gt;保存到am_win_record_allmsg_new表中， 发送第一条消息，并将robotWinServerAllMsgPoList第一条消息保存到&lt;br&gt;am_win_record，并发送mq消息，主题为ss-msg-bulk-send。&lt;br&gt;注：为什么极速群发需要使用msg_receiver_info表，因为am_win_record_allmsg_new存储的一对一的子任务，而极速群发是一次性发送多个对象，toWxid是列表，所以额外存储在msg_receiver_info表中，通过toWxid和receiver_id的映射来建立关系。" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="530" y="180" width="400" height="310" as="geometry" />
         </mxCell>
-        <mxCell id="H_QHMIvUXthHlk2gzlsp-12" value="普通群发：" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+        <mxCell id="H_QHMIvUXthHlk2gzlsp-17" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="H_QHMIvUXthHlk2gzlsp-12" target="H_QHMIvUXthHlk2gzlsp-16">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="H_QHMIvUXthHlk2gzlsp-12" value="普通群发：将任务拆分为fromWxid、toWxId的子任务，将所有的子任务插入am_win_record_allmsg_new中，发送第一条消息，并将robotWinServerAllMsgPoList第一条消息保存到&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;am_win_record，并发送mq消息，主题为ss-msg-bulk-send。无需使用msg_receiver_info表。" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="530" y="620" width="350" height="200" as="geometry" />
         </mxCell>
         <mxCell id="H_QHMIvUXthHlk2gzlsp-14" value="" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="1075" y="285" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="H_QHMIvUXthHlk2gzlsp-16" value="" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1075" y="690" width="120" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
