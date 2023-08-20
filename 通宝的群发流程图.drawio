@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-08-20T09:28:34.296Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36" etag="qyqKgUzsVR2_6Cc_BwRE" version="21.6.8" type="github">
+<mxfile host="app.diagrams.net" modified="2023-08-20T10:54:26.065Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36" etag="WIRuNdboD1IHzTcGAysF" version="21.6.8" type="github">
   <diagram name="第 1 页" id="kBad3HrkxAW1cUTBmK3s">
     <mxGraphModel dx="1674" dy="822" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
       <root>
@@ -49,11 +49,23 @@
         <mxCell id="H_QHMIvUXthHlk2gzlsp-12" value="普通群发：将任务拆分为fromWxid、toWxId的子任务，将所有的子任务插入am_win_record_allmsg_new中，发送第一条消息，并将robotWinServerAllMsgPoList第一条消息保存到&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;am_win_record，并发送mq消息，主题为ss-msg-bulk-send。无需使用msg_receiver_info表。" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="530" y="620" width="350" height="200" as="geometry" />
         </mxCell>
-        <mxCell id="H_QHMIvUXthHlk2gzlsp-14" value="" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="1075" y="285" width="120" height="60" as="geometry" />
+        <mxCell id="H_QHMIvUXthHlk2gzlsp-14" value="MsgBulkSendConsumer：从am_win_record中拿到第群发任务的id， 获取到robotWinServerRecordPo对象，根据msgId从am_win_record_allmsg_new表获取到第一个子任务，向ss-msg-bulk-detail发送Mq消息" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1080" y="257.5" width="295" height="155" as="geometry" />
         </mxCell>
-        <mxCell id="H_QHMIvUXthHlk2gzlsp-16" value="MsgBulkSendConsumer" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+        <mxCell id="H_QHMIvUXthHlk2gzlsp-19" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="H_QHMIvUXthHlk2gzlsp-16" target="H_QHMIvUXthHlk2gzlsp-18">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="H_QHMIvUXthHlk2gzlsp-16" value="MsgBulkSendConsumer：从am_win_record中拿到第群发任务的id， 获取到robotWinServerRecordPo对象，根据msgId从am_win_record_allmsg_new表获取到第一个子任务，向ss-msg-bulk-detail发送Mq消息。&lt;br&gt;msgId在插入的时候注入到am_win_record表中了。" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="1070" y="560" width="295" height="320" as="geometry" />
+        </mxCell>
+        <mxCell id="H_QHMIvUXthHlk2gzlsp-18" value="MsgBulkDetailConsumer：&lt;br&gt;1. sendMsg(recordPo, msg, mqMessage) 获取发送内容，调用executeSendCommand执行任务。本质就是一个子任务一个子任务的进行发送，根据不同的类型调用不同的方法实现。以群聊为例，调用facadeOpenApiManager.sendRoomMsgSpecify发送。&lt;br&gt;发送完一条之后，调用sendNextMessage(nextMsg, recordPo, msg, mqMessage, true)发送下一条。如何结束：只需判断当前任务和下一个任务的messageId是否相同，不同则表示该消息为最后一个。recordPo.getMsgId()为当前任务的最大子任务id+1，最后将类型更新为发送完成。&lt;br&gt;2. 最后尝试获取唤醒当前wxId的下一个大任务。" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1532.5" y="605" width="327.5" height="230" as="geometry" />
+        </mxCell>
+        <mxCell id="H_QHMIvUXthHlk2gzlsp-21" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="H_QHMIvUXthHlk2gzlsp-20" target="H_QHMIvUXthHlk2gzlsp-14">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="H_QHMIvUXthHlk2gzlsp-20" value="am_win_record是主任务，am_win_record_allmsg_new是子任务" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1126.25" y="100" width="202.5" height="80" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
