@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-08-20T14:32:57.780Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36" etag="_XzS3fedhm-75Mg7uxNh" version="21.6.8" type="github">
+<mxfile host="app.diagrams.net" modified="2023-08-20T14:50:17.235Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36" etag="ADg2oTvGTi6LGaal_rvW" version="21.6.8" type="github">
   <diagram name="第 1 页" id="J8AwHqCBefN4a8W1EPn6">
     <mxGraphModel dx="1674" dy="799" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
       <root>
@@ -294,11 +294,51 @@
         <mxCell id="CwKObZl5wt-i1WYEYqwP-100" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="CwKObZl5wt-i1WYEYqwP-97" target="CwKObZl5wt-i1WYEYqwP-99">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
+        <mxCell id="CwKObZl5wt-i1WYEYqwP-101" value="sendTaskMsg,&lt;br&gt;produce" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="CwKObZl5wt-i1WYEYqwP-100">
+          <mxGeometry x="-0.1" y="4" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
         <mxCell id="CwKObZl5wt-i1WYEYqwP-97" value="sunTaskProducerService" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="1830" y="810" width="160" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="CwKObZl5wt-i1WYEYqwP-99" value="" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+        <mxCell id="CwKObZl5wt-i1WYEYqwP-103" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="CwKObZl5wt-i1WYEYqwP-99" target="CwKObZl5wt-i1WYEYqwP-102">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="CwKObZl5wt-i1WYEYqwP-104" value="send" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="CwKObZl5wt-i1WYEYqwP-103">
+          <mxGeometry x="0.05" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="CwKObZl5wt-i1WYEYqwP-112" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="CwKObZl5wt-i1WYEYqwP-99" target="CwKObZl5wt-i1WYEYqwP-111">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="CwKObZl5wt-i1WYEYqwP-99" value="MQBaseProducer" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="2090" y="810" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="CwKObZl5wt-i1WYEYqwP-118" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="CwKObZl5wt-i1WYEYqwP-102" target="CwKObZl5wt-i1WYEYqwP-117">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="CwKObZl5wt-i1WYEYqwP-102" value="主题：apollo为mq.parentTopic4Produce&lt;br&gt;，具体值为robot-wx-win-issued-pro&lt;span style=&quot;background-color: initial;&quot;&gt;，&lt;/span&gt;&lt;br&gt;tag:apollo为mqtt.tag，具体值为MQ2MQTT" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="2290" y="790" width="210" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="CwKObZl5wt-i1WYEYqwP-116" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="CwKObZl5wt-i1WYEYqwP-111" target="CwKObZl5wt-i1WYEYqwP-114">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="CwKObZl5wt-i1WYEYqwP-111" value="主题：apollo为mq.parentTopic4Produce，具体值为robot-wx-win-pro，&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;tag:apollo为mqtt.tag，具体值为MQ2MQTT" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="2065" y="950" width="170" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="CwKObZl5wt-i1WYEYqwP-113" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="CwKObZl5wt-i1WYEYqwP-114" target="CwKObZl5wt-i1WYEYqwP-115">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="CwKObZl5wt-i1WYEYqwP-114" value="robot-wx-win-pro在storm-earth-windows的application-prod.properties文件中" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="2330" y="975" width="155" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="CwKObZl5wt-i1WYEYqwP-115" value="MqttSendServiceImpl.&lt;br&gt;sendMessage向云端发送数据" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="2642.5" y="985" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="CwKObZl5wt-i1WYEYqwP-117" value="javaClient/" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="2625" y="810" width="120" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
