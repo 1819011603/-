@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-08-19T15:31:11.184Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36" etag="30LP3SBYBlghcQOUGIMG" version="21.6.8" type="github">
+<mxfile host="app.diagrams.net" modified="2023-08-20T06:47:28.777Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36" etag="9ba9jMUEt7-B5i69mYZk" version="21.6.8" type="github">
   <diagram name="第 1 页" id="M8wkz3ywA9axf7roCOqa">
     <mxGraphModel dx="2843" dy="822" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
       <root>
@@ -41,11 +41,11 @@
         <mxCell id="Syk-qBa_AH_hEns3rg3Z-17" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Syk-qBa_AH_hEns3rg3Z-14" target="Syk-qBa_AH_hEns3rg3Z-16">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="Syk-qBa_AH_hEns3rg3Z-14" value="connectComplete方法将消息传给MqttClientBase.execute处理，将taskId缓存，防止重复任务。&lt;br&gt;&lt;br&gt;&lt;br&gt;1.&amp;nbsp;不是直接发往逆向的任务类型&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;&amp;nbsp;上传用户的日志和进群两种， 交给公共线程池处理&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;2. 需要直接发给逆向的，WxSendThreadPoolManager.submitTask(wxId, runnable);为每一个wxId创建一个线程池处理给逆向的任务，因为逆向一次只能发送一条消息，当然这里变成多个线程也无所谓，因为逆向发送时加了锁。" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="730" y="550" width="260" height="200" as="geometry" />
+        <mxCell id="Syk-qBa_AH_hEns3rg3Z-14" value="connectComplete方法将消息传给MqttClientBase.execute处理，将taskId缓存，防止重复任务。&lt;br&gt;&lt;br&gt;&lt;br&gt;1.&amp;nbsp;不是直接发往逆向的任务类型&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;&amp;nbsp;上传用户的日志和进群两种， 交给公共线程池处理&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;2. 需要直接发给逆向的，WxSendThreadPoolManager.submitTask(wxId, runnable);为每一个wxId创建一个线程池处理给逆向的任务，因为逆向一次只能发送一条消息，当然这里变成多个线程也无所谓，因为逆向发送时加了锁。&lt;br&gt;3.&amp;nbsp;WxSendTaskWrapper&amp;nbsp; 使用该对象包装了逆向处理的任务，使用ThreadLocal来保证单个wxId直接的逆向任务执行间隔一秒钟。&lt;br&gt;4. 所以加成多线程的话，逆向任务之间间隔一秒钟就无法实现了。&lt;br&gt;5. 要么减短间隔时长，会增加封号风险，加多线程，也会增加封号风险&lt;br&gt;6. 维护一个wxId和执行时间的映射，但也无法解决" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="730" y="550" width="360" height="260" as="geometry" />
         </mxCell>
         <mxCell id="Syk-qBa_AH_hEns3rg3Z-16" value="将任务给cloudFlowHandler处理器，发送过程同FrontFlowHandler。" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="315" y="585" width="270" height="130" as="geometry" />
+          <mxGeometry x="310" y="570" width="270" height="130" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
