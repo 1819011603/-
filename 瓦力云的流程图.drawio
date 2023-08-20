@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-08-20T13:52:42.337Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36" etag="-2ysN7x9l7S9lSu7GD7n" version="21.6.8" type="github">
+<mxfile host="app.diagrams.net" modified="2023-08-20T14:32:57.780Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36" etag="_XzS3fedhm-75Mg7uxNh" version="21.6.8" type="github">
   <diagram name="第 1 页" id="J8AwHqCBefN4a8W1EPn6">
     <mxGraphModel dx="1674" dy="799" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
       <root>
@@ -185,6 +185,9 @@
         <mxCell id="CwKObZl5wt-i1WYEYqwP-57" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="CwKObZl5wt-i1WYEYqwP-53" target="CwKObZl5wt-i1WYEYqwP-56">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
+        <mxCell id="CwKObZl5wt-i1WYEYqwP-79" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="CwKObZl5wt-i1WYEYqwP-53" target="CwKObZl5wt-i1WYEYqwP-78">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="CwKObZl5wt-i1WYEYqwP-53" value="&lt;div&gt;&amp;nbsp; &amp;nbsp; MQTT(0),&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; HTTP(1),&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; REDIS(2),&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; FEIGN(3);根据四种类型分别处理任务&lt;/div&gt;" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="1140" y="341" width="140" height="79" as="geometry" />
         </mxCell>
@@ -228,10 +231,74 @@
           <mxGeometry x="1400" y="490" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="CwKObZl5wt-i1WYEYqwP-67" value="https://internal-user.gaotu100.com/user/operation/report" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="1200" y="490" width="120" height="60" as="geometry" />
+          <mxGeometry x="1590" y="490" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="CwKObZl5wt-i1WYEYqwP-69" value="" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+        <mxCell id="CwKObZl5wt-i1WYEYqwP-69" value="这个不是微信助手的处理过程" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="20" y="350.5" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="CwKObZl5wt-i1WYEYqwP-82" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="CwKObZl5wt-i1WYEYqwP-78" target="CwKObZl5wt-i1WYEYqwP-81">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="CwKObZl5wt-i1WYEYqwP-83" value="doExecute" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="CwKObZl5wt-i1WYEYqwP-82">
+          <mxGeometry x="-0.2375" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="CwKObZl5wt-i1WYEYqwP-78" value="FeignExecutor" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1150" y="509.5" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="CwKObZl5wt-i1WYEYqwP-84" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="CwKObZl5wt-i1WYEYqwP-81">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1210" y="810" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="CwKObZl5wt-i1WYEYqwP-85" value="pushTask" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="CwKObZl5wt-i1WYEYqwP-84">
+          <mxGeometry x="-0.1542" y="2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="CwKObZl5wt-i1WYEYqwP-81" value="taskExecutorAdapter" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1150" y="649.5" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="CwKObZl5wt-i1WYEYqwP-89" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="CwKObZl5wt-i1WYEYqwP-86" target="CwKObZl5wt-i1WYEYqwP-88">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="CwKObZl5wt-i1WYEYqwP-90" value="pushTask" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="CwKObZl5wt-i1WYEYqwP-89">
+          <mxGeometry x="-0.25" y="-2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="CwKObZl5wt-i1WYEYqwP-86" value="RobotCloudAdapter" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1160" y="810" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="CwKObZl5wt-i1WYEYqwP-94" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="CwKObZl5wt-i1WYEYqwP-88" target="CwKObZl5wt-i1WYEYqwP-93">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="CwKObZl5wt-i1WYEYqwP-95" value="executeWinTask" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="CwKObZl5wt-i1WYEYqwP-94">
+          <mxGeometry x="0.075" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="CwKObZl5wt-i1WYEYqwP-88" value="robotCloudApiClient" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1360" y="810" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="CwKObZl5wt-i1WYEYqwP-98" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="CwKObZl5wt-i1WYEYqwP-93" target="CwKObZl5wt-i1WYEYqwP-97">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="CwKObZl5wt-i1WYEYqwP-93" value="ss-robot-cloud" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1630" y="810" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="CwKObZl5wt-i1WYEYqwP-96" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.75;exitY=0;exitDx=0;exitDy=0;entryX=1;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="CwKObZl5wt-i1WYEYqwP-93" target="CwKObZl5wt-i1WYEYqwP-93">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="CwKObZl5wt-i1WYEYqwP-100" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="CwKObZl5wt-i1WYEYqwP-97" target="CwKObZl5wt-i1WYEYqwP-99">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="CwKObZl5wt-i1WYEYqwP-97" value="sunTaskProducerService" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1830" y="810" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="CwKObZl5wt-i1WYEYqwP-99" value="" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="2090" y="810" width="120" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
