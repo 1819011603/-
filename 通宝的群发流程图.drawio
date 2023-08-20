@@ -1,9 +1,54 @@
-<mxfile host="app.diagrams.net" modified="2023-08-20T07:06:40.241Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36" version="21.6.8" etag="-gRN-1ek2iE2uyIYdDbC" type="github">
+<mxfile host="app.diagrams.net" modified="2023-08-20T08:14:15.651Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36" etag="bKWd9T08CqJVve9y6mwC" version="21.6.8" type="github">
   <diagram name="第 1 页" id="kBad3HrkxAW1cUTBmK3s">
-    <mxGraphModel>
+    <mxGraphModel dx="1674" dy="822" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="H_QHMIvUXthHlk2gzlsp-3" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="H_QHMIvUXthHlk2gzlsp-1" target="H_QHMIvUXthHlk2gzlsp-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="H_QHMIvUXthHlk2gzlsp-5" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="H_QHMIvUXthHlk2gzlsp-1" target="H_QHMIvUXthHlk2gzlsp-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="H_QHMIvUXthHlk2gzlsp-1" value="tb_win_server" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="60" y="180" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="H_QHMIvUXthHlk2gzlsp-2" value="&lt;meta charset=&quot;utf-8&quot;&gt;&lt;span style=&quot;color: rgb(0, 0, 0); font-family: Helvetica; font-size: 12px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(251, 251, 251); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; float: none; display: inline !important;&quot;&gt;tb_win_server&lt;/span&gt;" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="60" y="660" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="H_QHMIvUXthHlk2gzlsp-7" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="H_QHMIvUXthHlk2gzlsp-4" target="H_QHMIvUXthHlk2gzlsp-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="H_QHMIvUXthHlk2gzlsp-4" value="insertAllRecord" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="260" y="180" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="H_QHMIvUXthHlk2gzlsp-9" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="H_QHMIvUXthHlk2gzlsp-6" target="H_QHMIvUXthHlk2gzlsp-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="H_QHMIvUXthHlk2gzlsp-6" value="robotWinServerVo-&amp;gt;robotWinServerBo-&amp;gt;robotWinServerRecordPo" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="260" y="320" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="H_QHMIvUXthHlk2gzlsp-11" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="H_QHMIvUXthHlk2gzlsp-8" target="H_QHMIvUXthHlk2gzlsp-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="H_QHMIvUXthHlk2gzlsp-13" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="H_QHMIvUXthHlk2gzlsp-8" target="H_QHMIvUXthHlk2gzlsp-12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="H_QHMIvUXthHlk2gzlsp-8" value="buildAllMsgList:&lt;br&gt;1. 做一些兼容性操作，&lt;br&gt;2.根据RobotWinServerFriendBo::getWxid获得所有的发送对象（此时是不区分wxid还是群聊id的）&lt;br&gt;3. 将发送对象拆分为wxid和chatroom，并检查是否超出发送上限,没有的话则存入robotWinServerRecordPo对象中&lt;br&gt;" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="150" y="450" width="340" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="H_QHMIvUXthHlk2gzlsp-15" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="H_QHMIvUXthHlk2gzlsp-10" target="H_QHMIvUXthHlk2gzlsp-14">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="H_QHMIvUXthHlk2gzlsp-10" value="极速群发：将getSendContentArr()中的RobotWinServerAllMsgBo&lt;span style=&quot;background-color: initial;&quot;&gt;转化为&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;robotWinServerAllMsgPo对象，&lt;/span&gt;msgKey为第几条消息（从0开始）。&lt;br&gt;按照私聊和群聊进行combine，私聊在前，将列表中的content、contentName、cardInfo、type存入到一个list中，目的就是将List&amp;lt;RobotWinServerAllMsgPo&amp;gt;转化为一个RobotWinServerAllMsgPo对象。在这过程当中，生成了一个MsgReceiverInfoPo对象，保存了所有的发送者wxId和type（区分群聊和私聊）和typeIds(消息类型的id)，并生成了一个receiverid（雪花id+当前时间戳），并保存到msg_receiver_info表中。将群聊和私聊的robotWinServerAllMsgPo保存到robotWinServerAllMsgPoList， 将robotWinServerAllMsgPoList所有消息&lt;br&gt;保存到am_win_record_allmsg_new表中， 发送第一条消息，并将robotWinServerAllMsgPoList第一条消息保存到&lt;br&gt;am_win_record，并发送mq消息，主题为ss-msg-bulk-send" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="530" y="180" width="350" height="270" as="geometry" />
+        </mxCell>
+        <mxCell id="H_QHMIvUXthHlk2gzlsp-12" value="普通群发：" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="530" y="620" width="350" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="H_QHMIvUXthHlk2gzlsp-14" value="" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1075" y="285" width="120" height="60" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
