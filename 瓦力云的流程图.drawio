@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2023-08-21T10:23:14.299Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36" etag="Gil9RHvUIlo68Gs1eKkX" version="21.6.8" type="github">
+<mxfile host="app.diagrams.net" modified="2023-08-21T10:27:54.446Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36" etag="fmLATGHZB90LBySqrnkU" version="21.6.8" type="github">
   <diagram name="第 1 页" id="J8AwHqCBefN4a8W1EPn6">
-    <mxGraphModel dx="2093" dy="959" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+    <mxGraphModel dx="5580" dy="2557" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -559,6 +559,9 @@
         <mxCell id="CwKObZl5wt-i1WYEYqwP-186" value="successTaskProducerService" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="3885" y="556.25" width="210" height="83.75" as="geometry" />
         </mxCell>
+        <mxCell id="CwKObZl5wt-i1WYEYqwP-220" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="CwKObZl5wt-i1WYEYqwP-203" target="CwKObZl5wt-i1WYEYqwP-219">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="CwKObZl5wt-i1WYEYqwP-203" value="&lt;b style=&quot;border-color: var(--border-color);&quot;&gt;topic为ss-robot-server 和&amp;nbsp;ss-robot-server-disorder， 交给SS-MSG-CENTER的MSGConsumer消费&lt;/b&gt;" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="3905" y="731.88" width="170" height="108.13" as="geometry" />
         </mxCell>
@@ -587,17 +590,60 @@
         <mxCell id="CwKObZl5wt-i1WYEYqwP-216" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="CwKObZl5wt-i1WYEYqwP-212" target="CwKObZl5wt-i1WYEYqwP-215">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="CwKObZl5wt-i1WYEYqwP-212" value="SS-MSG-CENTER" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+        <mxCell id="CwKObZl5wt-i1WYEYqwP-212" value="&lt;b&gt;SS-MSG-CENTER&lt;/b&gt;" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="3680" y="696.25" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="CwKObZl5wt-i1WYEYqwP-218" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="CwKObZl5wt-i1WYEYqwP-215" target="CwKObZl5wt-i1WYEYqwP-217">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
+        <mxCell id="CwKObZl5wt-i1WYEYqwP-221" value="process" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="CwKObZl5wt-i1WYEYqwP-218">
+          <mxGeometry x="-0.0375" y="-3" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
         <mxCell id="CwKObZl5wt-i1WYEYqwP-215" value="BaseProcessor处理器" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="3680" y="836.25" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="CwKObZl5wt-i1WYEYqwP-217" value="" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+        <mxCell id="CwKObZl5wt-i1WYEYqwP-223" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="CwKObZl5wt-i1WYEYqwP-217" target="CwKObZl5wt-i1WYEYqwP-222">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="CwKObZl5wt-i1WYEYqwP-224" value="send" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="CwKObZl5wt-i1WYEYqwP-223">
+          <mxGeometry x="-0.2563" y="4" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="CwKObZl5wt-i1WYEYqwP-217" value="msgProduce" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="3680" y="976.25" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="CwKObZl5wt-i1WYEYqwP-219" value="后续处理不详" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="3930" y="944.075" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="CwKObZl5wt-i1WYEYqwP-226" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="CwKObZl5wt-i1WYEYqwP-222" target="CwKObZl5wt-i1WYEYqwP-225">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="CwKObZl5wt-i1WYEYqwP-222" value="订阅的主题和tag为ss-msg-robot-task:robot-task，交给SsRobotTaskConsumer处理" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="3670" y="1120" width="140" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="CwKObZl5wt-i1WYEYqwP-228" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="CwKObZl5wt-i1WYEYqwP-225" target="CwKObZl5wt-i1WYEYqwP-227">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="CwKObZl5wt-i1WYEYqwP-225" value="&lt;b&gt;tb_win_server&lt;/b&gt;" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="3460" y="1140" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="CwKObZl5wt-i1WYEYqwP-230" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="CwKObZl5wt-i1WYEYqwP-227" target="CwKObZl5wt-i1WYEYqwP-229">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="CwKObZl5wt-i1WYEYqwP-227" value="有SsRobotTaskConsumer的子类RobotTaskConsumer处理任务状态" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="3225" y="1135" width="160" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="CwKObZl5wt-i1WYEYqwP-232" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="CwKObZl5wt-i1WYEYqwP-229" target="CwKObZl5wt-i1WYEYqwP-231">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="CwKObZl5wt-i1WYEYqwP-229" value="ssRobotTaskService.processRobotTaskCallBack" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="2860" y="1140" width="265" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="CwKObZl5wt-i1WYEYqwP-231" value="END" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="2587.5" y="1140" width="120" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
