@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2023-08-22T06:58:23.313Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36" etag="5E4t5DB6pJLSKZbH79nw" version="21.6.8" type="github">
+<mxfile host="app.diagrams.net" modified="2023-08-22T13:44:04.301Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36" etag="eosXGqxxja19Y8uFzpeP" version="21.6.8" type="github">
   <diagram name="第 1 页" id="uJNZyxgSVUJfB3R79Ev_">
-    <mxGraphModel dx="2074" dy="767" grid="0" gridSize="10" guides="0" tooltips="0" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+    <mxGraphModel dx="1594" dy="587" grid="0" gridSize="10" guides="0" tooltips="0" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -160,6 +160,33 @@
         </mxCell>
         <mxCell id="10G2rOxXVBr4aUtNrF5U-18" value="AsyncSelectTask.run无限监听" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="-88" y="231" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="10G2rOxXVBr4aUtNrF5U-23" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="10G2rOxXVBr4aUtNrF5U-21" target="10G2rOxXVBr4aUtNrF5U-22">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="10G2rOxXVBr4aUtNrF5U-21" value="MqttClientBase&lt;br&gt;messageArrived:&amp;nbsp; 监听MQTT" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-129" y="1114" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="10G2rOxXVBr4aUtNrF5U-25" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="10G2rOxXVBr4aUtNrF5U-22" target="10G2rOxXVBr4aUtNrF5U-24">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="10G2rOxXVBr4aUtNrF5U-22" value="MqttClientBase.execute" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="75" y="1116" width="161" height="56" as="geometry" />
+        </mxCell>
+        <mxCell id="10G2rOxXVBr4aUtNrF5U-27" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="10G2rOxXVBr4aUtNrF5U-24" target="10G2rOxXVBr4aUtNrF5U-26">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="10G2rOxXVBr4aUtNrF5U-24" value="taskId去除,LinkedHashMap存储,长度为10000,去除最早的." style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="336.5" y="1114" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="10G2rOxXVBr4aUtNrF5U-29" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="10G2rOxXVBr4aUtNrF5U-26" target="10G2rOxXVBr4aUtNrF5U-28">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="10G2rOxXVBr4aUtNrF5U-26" value="判断任务是否过期: 10分钟过期,另起线程通知超时" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="536.5" y="1114" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="10G2rOxXVBr4aUtNrF5U-28" value="使用WxSendThreadPoolManager提交任务" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="736.5" y="1114" width="209.5" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
