@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2023-08-29T03:06:58.424Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36" etag="u17bVm3TBUqoxBLEBVCt" version="21.6.8" type="github">
+<mxfile host="app.diagrams.net" modified="2023-08-29T03:08:52.828Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36" etag="bC8Rzz9O9R2FpBSFqduv" version="21.6.8" type="github">
   <diagram name="第 1 页" id="RkuyRBCHdWCg4b38thSj">
-    <mxGraphModel dx="1194" dy="587" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+    <mxGraphModel dx="1194" dy="587" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -62,6 +62,31 @@
           <mxGeometry x="0.0167" y="1" relative="1" as="geometry">
             <mxPoint as="offset" />
           </mxGeometry>
+        </mxCell>
+        <mxCell id="lQdwI8whCZZzwmL-gXzH-22" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="lQdwI8whCZZzwmL-gXzH-20" target="lQdwI8whCZZzwmL-gXzH-21">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lQdwI8whCZZzwmL-gXzH-23" value="新增模板" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="lQdwI8whCZZzwmL-gXzH-22">
+          <mxGeometry y="-2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lQdwI8whCZZzwmL-gXzH-20" value="微信助手" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="190" y="446" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="lQdwI8whCZZzwmL-gXzH-25" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="lQdwI8whCZZzwmL-gXzH-21" target="lQdwI8whCZZzwmL-gXzH-24">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lQdwI8whCZZzwmL-gXzH-27" value="类型映射和参数拼接" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="lQdwI8whCZZzwmL-gXzH-25">
+          <mxGeometry x="0.0159" y="-3" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lQdwI8whCZZzwmL-gXzH-21" value="微信助手服务端" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="390" y="446" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="lQdwI8whCZZzwmL-gXzH-24" value="crm" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="825" y="446" width="120" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
