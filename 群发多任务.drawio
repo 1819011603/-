@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-08-30T13:43:57.521Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36" etag="yV0ZwKZR5Kb6t9ipnqN0" version="21.7.0" type="github">
+<mxfile host="app.diagrams.net" modified="2023-08-30T14:22:59.812Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36" etag="Kim5nffvTjLAQX_Mz5ID" version="21.7.0" type="github">
   <diagram name="第 1 页" id="_jbqG42ynAipyEUHrYhT">
     <mxGraphModel dx="1194" dy="587" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
       <root>
@@ -78,8 +78,41 @@
         <mxCell id="eZgHUBhp_SpL1jb25tz2-4" value="MsgBulkSendConsumer" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="492" y="659" width="188" height="61" as="geometry" />
         </mxCell>
-        <mxCell id="eZgHUBhp_SpL1jb25tz2-6" value="1. 处理了异常情况" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="820" y="588.75" width="286" height="200.5" as="geometry" />
+        <mxCell id="eZgHUBhp_SpL1jb25tz2-17" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="eZgHUBhp_SpL1jb25tz2-6" target="eZgHUBhp_SpL1jb25tz2-16">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="eZgHUBhp_SpL1jb25tz2-6" value="1. 处理了异常情况&amp;nbsp; 1. mysql入表慢于MQ消费,这个时候应该抛出异常(现在是直接return了, 但是保存的时候是先插入表后发MQ的, 所以其实这个MQ消息就是异常消息)&amp;nbsp; &amp;nbsp; 就是任务状态改变成了typeWaiting(排队中)或者typeDelete(已取消) 就会直接return &lt;b&gt;.如果要做并发.排队中的消息明显是可以发的, 所以这里要处理一下.&lt;br&gt;2. &lt;/b&gt;如果查出当前任务是typeSending,&amp;nbsp;typePause(正在发送,已暂停)&amp;nbsp; 这是用暂停和继续的逻辑的. (如果当前状态是typeSending并且还有MQ消息,那就说明是从暂停-&amp;gt; 继续,&amp;nbsp; 所以状态设置为排队中.)&amp;nbsp; (当前状态是typePause并且还有MQ, 就说明MQ消息没到的时候用户就暂停了, 也可以让他在排队中等待,)&lt;b&gt;如果是并发的时候, 暂停改为排队中这个状态肯定是不好的, 这里肯定要处理&lt;/b&gt;&lt;br&gt;3.&amp;nbsp; 设置为typeSending, 找到msg表的第一条消息的id, 找到当前message_id下的最小的id即可" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="800" y="569.5" width="360" height="240" as="geometry" />
+        </mxCell>
+        <mxCell id="eZgHUBhp_SpL1jb25tz2-9" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="eZgHUBhp_SpL1jb25tz2-10" target="eZgHUBhp_SpL1jb25tz2-12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="eZgHUBhp_SpL1jb25tz2-10" value="第二个立即任务" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="21" y="957.75" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="eZgHUBhp_SpL1jb25tz2-11" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="eZgHUBhp_SpL1jb25tz2-12" target="eZgHUBhp_SpL1jb25tz2-14">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="eZgHUBhp_SpL1jb25tz2-12" value="&lt;br&gt;2. message_id=微信号+时间戳&lt;br&gt;3. 拼接msg表信息, 批量插入msg表&lt;br&gt;4. 并将第一条msg的id存入record表的msgId字段&lt;br&gt;5. 设置发送时间为当前事件&lt;br&gt;6. 状态RocketMQ, 发送了MQ" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="241" y="930.5" width="188" height="114.5" as="geometry" />
+        </mxCell>
+        <mxCell id="eZgHUBhp_SpL1jb25tz2-13" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="eZgHUBhp_SpL1jb25tz2-14" target="eZgHUBhp_SpL1jb25tz2-15">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="eZgHUBhp_SpL1jb25tz2-14" value="MsgBulkSendConsumer" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="483" y="969.5" width="188" height="61" as="geometry" />
+        </mxCell>
+        <mxCell id="eZgHUBhp_SpL1jb25tz2-15" value="由于当前wxId已经有任务在typeSending,直接return了." style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="791" y="880" width="360" height="240" as="geometry" />
+        </mxCell>
+        <mxCell id="eZgHUBhp_SpL1jb25tz2-19" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="eZgHUBhp_SpL1jb25tz2-16" target="eZgHUBhp_SpL1jb25tz2-18">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="eZgHUBhp_SpL1jb25tz2-16" value="MsgBulkDetailConsumer" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1360" y="659.5" width="170" height="60.5" as="geometry" />
+        </mxCell>
+        <mxCell id="eZgHUBhp_SpL1jb25tz2-18" value="1. 开启事务&lt;br&gt;2. 以消息的uniqueMsg作为key设置redis, 过期时间为10s, 保证多服务中只有一个服务处理一条消息.&amp;nbsp; &amp;nbsp;uniqueMsg=msg表的id+当前时间戳&lt;br&gt;3. 首先拿到uniqueMsg下的重试次数, 拿到下一个消息(id+1)&lt;br&gt;4. 重试次数超过阈值, 设置fail状态, 删除重试次数.&lt;br&gt;5. 如果任务是&amp;nbsp;typeDelete或者typePause, 直接continue&lt;br&gt;6. msg任务不是待发送, 直接continue&lt;br&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;7. 发送消息 修改消息状态&amp;nbsp;&amp;nbsp;&lt;br&gt;8. 唤醒下一个子任务或者大任务&lt;br&gt;&amp;nbsp; &amp;nbsp;&amp;nbsp;&lt;/span&gt;" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1640" y="499.5" width="415" height="380" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
