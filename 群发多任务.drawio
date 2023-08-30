@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2023-08-30T14:22:59.812Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36" etag="Kim5nffvTjLAQX_Mz5ID" version="21.7.0" type="github">
+<mxfile host="app.diagrams.net" modified="2023-08-30T14:40:15.426Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36" etag="y46dyo62nfR8sAK3PaW6" version="21.7.0" type="github">
   <diagram name="第 1 页" id="_jbqG42ynAipyEUHrYhT">
-    <mxGraphModel dx="1194" dy="587" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+    <mxGraphModel dx="3340" dy="1067" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -113,6 +113,39 @@
         </mxCell>
         <mxCell id="eZgHUBhp_SpL1jb25tz2-18" value="1. 开启事务&lt;br&gt;2. 以消息的uniqueMsg作为key设置redis, 过期时间为10s, 保证多服务中只有一个服务处理一条消息.&amp;nbsp; &amp;nbsp;uniqueMsg=msg表的id+当前时间戳&lt;br&gt;3. 首先拿到uniqueMsg下的重试次数, 拿到下一个消息(id+1)&lt;br&gt;4. 重试次数超过阈值, 设置fail状态, 删除重试次数.&lt;br&gt;5. 如果任务是&amp;nbsp;typeDelete或者typePause, 直接continue&lt;br&gt;6. msg任务不是待发送, 直接continue&lt;br&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;7. 发送消息 修改消息状态&amp;nbsp;&amp;nbsp;&lt;br&gt;8. 唤醒下一个子任务或者大任务&lt;br&gt;&amp;nbsp; &amp;nbsp;&amp;nbsp;&lt;/span&gt;" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="1640" y="499.5" width="415" height="380" as="geometry" />
+        </mxCell>
+        <mxCell id="eZgHUBhp_SpL1jb25tz2-22" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="eZgHUBhp_SpL1jb25tz2-20" target="eZgHUBhp_SpL1jb25tz2-21">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="eZgHUBhp_SpL1jb25tz2-20" value="第一个定时任务" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-14.5" y="1345" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="eZgHUBhp_SpL1jb25tz2-24" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="eZgHUBhp_SpL1jb25tz2-21" target="eZgHUBhp_SpL1jb25tz2-23">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="eZgHUBhp_SpL1jb25tz2-21" value="一分钟扫描一次, 并且多个服务中任意时刻最多只有一个服务能进入该方法, 访问结束后会删除redis&lt;br&gt;2. 扫描前二十分钟到下一分钟的所有typeTiming的任务, 将任务状态修改为typeWaiting&lt;br&gt;3. 设置一个过期时间 两个星期, &lt;br&gt;4. 对于每一个wxId下的定时任务, 放入线程池处理&lt;br&gt;5. 在同一个wxId中只发第一个大任务, 改为rocketMq" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="194.5" y="1290" width="429" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="eZgHUBhp_SpL1jb25tz2-26" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="eZgHUBhp_SpL1jb25tz2-23" target="eZgHUBhp_SpL1jb25tz2-18">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1592.75" y="1375" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="eZgHUBhp_SpL1jb25tz2-27" value="通过8来串行执行定时任务" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="eZgHUBhp_SpL1jb25tz2-26">
+          <mxGeometry x="-0.4825" y="-2" relative="1" as="geometry">
+            <mxPoint x="-1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="eZgHUBhp_SpL1jb25tz2-28" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="eZgHUBhp_SpL1jb25tz2-23" target="eZgHUBhp_SpL1jb25tz2-15">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="eZgHUBhp_SpL1jb25tz2-29" value="由于当前wxId已经有任务在typeSending,直接return了." style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="eZgHUBhp_SpL1jb25tz2-28">
+          <mxGeometry x="0.1879" y="-5" relative="1" as="geometry">
+            <mxPoint x="-1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="eZgHUBhp_SpL1jb25tz2-23" value="其他的大任务通过. 如果当前wxId有正在执行的大任务,&amp;nbsp;" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="858" y="1305" width="476.5" height="140" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
