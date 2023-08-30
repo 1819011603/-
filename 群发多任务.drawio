@@ -1,64 +1,85 @@
-<mxfile host="app.diagrams.net" modified="2023-08-30T12:08:10.991Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36" etag="1dxyeA0GE9MYLWGkpxMg" version="21.7.0" type="github">
+<mxfile host="app.diagrams.net" modified="2023-08-30T13:43:57.521Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36" etag="yV0ZwKZR5Kb6t9ipnqN0" version="21.7.0" type="github">
   <diagram name="第 1 页" id="_jbqG42ynAipyEUHrYhT">
     <mxGraphModel dx="1194" dy="587" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="DSpzE5suGisKfg1SqeY_-3" value="发送Mq,任务状态为rocketMq" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="DSpzE5suGisKfg1SqeY_-1" target="DSpzE5suGisKfg1SqeY_-2">
+        <mxCell id="DSpzE5suGisKfg1SqeY_-3" value="发送Mq,任务状态为rocketMq" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="DSpzE5suGisKfg1SqeY_-1" target="DSpzE5suGisKfg1SqeY_-2" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="DSpzE5suGisKfg1SqeY_-1" value="保存群发任务" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="DSpzE5suGisKfg1SqeY_-1" value="保存群发任务" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="100" y="140" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="DSpzE5suGisKfg1SqeY_-5" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="DSpzE5suGisKfg1SqeY_-2" target="DSpzE5suGisKfg1SqeY_-4">
+        <mxCell id="DSpzE5suGisKfg1SqeY_-5" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="DSpzE5suGisKfg1SqeY_-2" target="DSpzE5suGisKfg1SqeY_-4" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="DSpzE5suGisKfg1SqeY_-6" value="typeSending" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="DSpzE5suGisKfg1SqeY_-5">
+        <mxCell id="DSpzE5suGisKfg1SqeY_-6" value="typeSending" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="DSpzE5suGisKfg1SqeY_-5" vertex="1" connectable="0">
           <mxGeometry x="0.1535" y="1" relative="1" as="geometry">
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="DSpzE5suGisKfg1SqeY_-2" value="MsgBulkSendConsumer" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+        <mxCell id="DSpzE5suGisKfg1SqeY_-2" value="MsgBulkSendConsumer" style="whiteSpace=wrap;html=1;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="465" y="140" width="175" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="DSpzE5suGisKfg1SqeY_-8" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="DSpzE5suGisKfg1SqeY_-4" target="DSpzE5suGisKfg1SqeY_-7">
+        <mxCell id="DSpzE5suGisKfg1SqeY_-8" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="DSpzE5suGisKfg1SqeY_-4" target="DSpzE5suGisKfg1SqeY_-7" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="DSpzE5suGisKfg1SqeY_-4" value="发送大任务的一条子任务到MQ" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+        <mxCell id="DSpzE5suGisKfg1SqeY_-4" value="发送大任务的一条子任务到MQ" style="whiteSpace=wrap;html=1;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="800" y="140" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="DSpzE5suGisKfg1SqeY_-10" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="DSpzE5suGisKfg1SqeY_-7" target="DSpzE5suGisKfg1SqeY_-9">
+        <mxCell id="DSpzE5suGisKfg1SqeY_-10" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="DSpzE5suGisKfg1SqeY_-7" target="DSpzE5suGisKfg1SqeY_-9" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="DSpzE5suGisKfg1SqeY_-7" value="MsgBulkDetailConsumer.sendMsg" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+        <mxCell id="DSpzE5suGisKfg1SqeY_-7" value="MsgBulkDetailConsumer.sendMsg" style="whiteSpace=wrap;html=1;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="760" y="270" width="200" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="DSpzE5suGisKfg1SqeY_-12" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="DSpzE5suGisKfg1SqeY_-9" target="DSpzE5suGisKfg1SqeY_-11">
+        <mxCell id="DSpzE5suGisKfg1SqeY_-12" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="DSpzE5suGisKfg1SqeY_-9" target="DSpzE5suGisKfg1SqeY_-11" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="DSpzE5suGisKfg1SqeY_-9" value="更新msg表的状态" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+        <mxCell id="DSpzE5suGisKfg1SqeY_-9" value="更新msg表的状态" style="whiteSpace=wrap;html=1;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="800" y="420" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="DSpzE5suGisKfg1SqeY_-14" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="DSpzE5suGisKfg1SqeY_-11" target="DSpzE5suGisKfg1SqeY_-13">
+        <mxCell id="DSpzE5suGisKfg1SqeY_-14" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="DSpzE5suGisKfg1SqeY_-11" target="DSpzE5suGisKfg1SqeY_-13" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="DSpzE5suGisKfg1SqeY_-11" value="发送下一条消息" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+        <mxCell id="DSpzE5suGisKfg1SqeY_-11" value="发送下一条消息" style="whiteSpace=wrap;html=1;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="600" y="420" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="DSpzE5suGisKfg1SqeY_-13" value="1. 大任务的最后一个子任务, 修改Record表的状态,&amp;nbsp;typeSent, 发送下一个typeWaiting的大任务给MsgBulkSendConsumer&lt;br&gt;, 如果没有, 就将当前大任务的发送条数+1&lt;br&gt;2. 不是最后一个子任务, 通过全局配置找到消息间隔, 并发送消息给MsgBulkDetailConsumer,&amp;nbsp;&lt;span style=&quot;background-color: initial;&quot;&gt;MQ&lt;/span&gt;" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+        <mxCell id="DSpzE5suGisKfg1SqeY_-13" value="1. 大任务的最后一个子任务, 修改Record表的状态,&amp;nbsp;typeSent, 发送下一个typeWaiting的大任务给MsgBulkSendConsumer&lt;br&gt;, 如果没有, 就将当前大任务的发送条数+1&lt;br&gt;2. 不是最后一个子任务, 通过全局配置找到消息间隔, 并发送消息给MsgBulkDetailConsumer,&amp;nbsp;&lt;span style=&quot;background-color: initial;&quot;&gt;MQ&lt;/span&gt;" style="whiteSpace=wrap;html=1;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="280" y="370" width="200" height="160" as="geometry" />
         </mxCell>
-        <mxCell id="DSpzE5suGisKfg1SqeY_-15" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="DSpzE5suGisKfg1SqeY_-13" target="DSpzE5suGisKfg1SqeY_-2">
+        <mxCell id="DSpzE5suGisKfg1SqeY_-15" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" parent="1" source="DSpzE5suGisKfg1SqeY_-13" target="DSpzE5suGisKfg1SqeY_-2" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="560" y="290" as="sourcePoint" />
             <mxPoint x="610" y="240" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="DSpzE5suGisKfg1SqeY_-16" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="DSpzE5suGisKfg1SqeY_-13" target="DSpzE5suGisKfg1SqeY_-7">
+        <mxCell id="DSpzE5suGisKfg1SqeY_-16" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="DSpzE5suGisKfg1SqeY_-13" target="DSpzE5suGisKfg1SqeY_-7" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="560" y="290" as="sourcePoint" />
             <mxPoint x="610" y="240" as="targetPoint" />
           </mxGeometry>
+        </mxCell>
+        <mxCell id="eZgHUBhp_SpL1jb25tz2-3" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="eZgHUBhp_SpL1jb25tz2-1" target="eZgHUBhp_SpL1jb25tz2-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="eZgHUBhp_SpL1jb25tz2-1" value="第一个立即任务" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="30" y="647.25" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="eZgHUBhp_SpL1jb25tz2-5" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="eZgHUBhp_SpL1jb25tz2-2" target="eZgHUBhp_SpL1jb25tz2-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="eZgHUBhp_SpL1jb25tz2-2" value="&lt;br&gt;2. message_id=微信号+时间戳&lt;br&gt;3. 拼接msg表信息, 批量插入msg表&lt;br&gt;4. 并将第一条msg的id存入record表的msgId字段&lt;br&gt;5. 设置发送时间为当前事件&lt;br&gt;6. 状态RocketMQ, 发送了MQ" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="250" y="620" width="188" height="114.5" as="geometry" />
+        </mxCell>
+        <mxCell id="eZgHUBhp_SpL1jb25tz2-7" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="eZgHUBhp_SpL1jb25tz2-4" target="eZgHUBhp_SpL1jb25tz2-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="eZgHUBhp_SpL1jb25tz2-4" value="MsgBulkSendConsumer" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="492" y="659" width="188" height="61" as="geometry" />
+        </mxCell>
+        <mxCell id="eZgHUBhp_SpL1jb25tz2-6" value="1. 处理了异常情况" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="820" y="588.75" width="286" height="200.5" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
