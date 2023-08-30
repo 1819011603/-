@@ -1,23 +1,52 @@
-<mxfile host="app.diagrams.net" modified="2023-08-30T08:54:18.122Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36" etag="owl3tUmxO-KFX8pM0QcJ" version="21.6.9" type="github">
+<mxfile host="app.diagrams.net" modified="2023-08-30T09:31:55.694Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36" etag="Nu8vbP0UBpR9MyBVn_ip" version="21.7.0" type="github">
   <diagram name="第 1 页" id="_jbqG42ynAipyEUHrYhT">
-    <mxGraphModel dx="1194" dy="587" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+    <mxGraphModel dx="1674" dy="767" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="AzDHVjjF9Ip_TZPcEUNr-3" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="AzDHVjjF9Ip_TZPcEUNr-1" target="AzDHVjjF9Ip_TZPcEUNr-2">
+        <mxCell id="DSpzE5suGisKfg1SqeY_-3" value="发送Mq,任务状态为rocketMq" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="DSpzE5suGisKfg1SqeY_-1" target="DSpzE5suGisKfg1SqeY_-2">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="AzDHVjjF9Ip_TZPcEUNr-1" value="创建定时任务:&lt;br&gt;&quot;&lt;a style=&quot;border-color: var(--border-color); margin: 0px; padding: 0px; box-sizing: border-box; background-color: rgb(255, 255, 255); color: rgb(55, 61, 65); cursor: pointer; font-family: &amp;quot;Roboto Mono&amp;quot;, Consolas, Menlo, Courier, monospace; text-align: start;&quot; class=&quot;link dark-text&quot;&gt;&lt;span style=&quot;border-color: var(--border-color); margin: 0px; padding: 0px; box-sizing: border-box;&quot;&gt;sendTime&lt;/span&gt;&lt;/a&gt;&lt;span style=&quot;border-color: var(--border-color); margin: 0px; padding: 0px; box-sizing: border-box; color: rgb(38, 38, 38); font-family: &amp;quot;Roboto Mono&amp;quot;, Consolas, Menlo, Courier, monospace; text-align: start; background-color: rgb(255, 255, 255);&quot; class=&quot;dark-tag-colon&quot;&gt;&quot;&lt;/span&gt;&lt;a style=&quot;border-color: var(--border-color); margin: 0px; padding: 0px; box-sizing: border-box; background-color: rgb(255, 255, 255); color: rgb(55, 61, 65); cursor: pointer; font-family: &amp;quot;Roboto Mono&amp;quot;, Consolas, Menlo, Courier, monospace; text-align: start;&quot; class=&quot;link dark-text&quot;&gt;&lt;span style=&quot;border-color: var(--border-color); margin: 0px; padding: 0px; box-sizing: border-box;&quot; class=&quot;&quot;&gt;&lt;/span&gt;&lt;/a&gt;&lt;span style=&quot;border-color: var(--border-color); margin: 0px; padding: 0px; box-sizing: border-box; color: rgb(38, 38, 38); font-family: &amp;quot;Roboto Mono&amp;quot;, Consolas, Menlo, Courier, monospace; text-align: start; background-color: rgb(255, 255, 255);&quot; class=&quot;dark-tag-colon&quot;&gt;:&lt;/span&gt;&lt;a style=&quot;border-color: var(--border-color); margin: 0px; padding: 0px; box-sizing: border-box; background-color: rgb(255, 255, 255); color: rgb(55, 61, 65); cursor: pointer; font-family: &amp;quot;Roboto Mono&amp;quot;, Consolas, Menlo, Courier, monospace; text-align: start;&quot; class=&quot;link dark-text&quot;&gt;&lt;span style=&quot;border-color: var(--border-color); margin: 0px; padding: 0px; box-sizing: border-box;&quot;&gt;1693373520149,&amp;nbsp;2023-08-30 13:32:00.149, id=11991&lt;br&gt;&quot;&lt;/span&gt;&lt;/a&gt;&lt;a style=&quot;margin: 0px; padding: 0px; box-sizing: border-box; cursor: pointer;&quot; class=&quot;link dark-text&quot;&gt;&lt;span style=&quot;margin: 0px; padding: 0px; box-sizing: border-box;&quot;&gt;sendTime&lt;/span&gt;&lt;/a&gt;&lt;span style=&quot;margin: 0px; padding: 0px; box-sizing: border-box; color: rgb(38, 38, 38);&quot; class=&quot;dark-tag-colon&quot;&gt;&quot;&lt;/span&gt;&lt;a style=&quot;margin: 0px; padding: 0px; box-sizing: border-box; cursor: pointer;&quot; class=&quot;link dark-text&quot;&gt;&lt;span style=&quot;margin: 0px; padding: 0px; box-sizing: border-box;&quot; class=&quot;&quot;&gt;&lt;/span&gt;&lt;/a&gt;&lt;span style=&quot;margin: 0px; padding: 0px; box-sizing: border-box; color: rgb(38, 38, 38);&quot; class=&quot;dark-tag-colon&quot;&gt;:&lt;/span&gt;&lt;a style=&quot;margin: 0px; padding: 0px; box-sizing: border-box; text-decoration-line: underline; cursor: pointer; color: rgb(0, 112, 204) !important;&quot; class=&quot;link dark-text&quot;&gt;&lt;span style=&quot;margin: 0px; padding: 0px; box-sizing: border-box;&quot;&gt;1693373520432,&amp;nbsp;2023-08-30 13:32:00.432,&amp;nbsp; &lt;/span&gt;&lt;/a&gt;&lt;a style=&quot;border-color: var(--border-color); margin: 0px; padding: 0px; box-sizing: border-box; background-color: rgb(255, 255, 255); color: rgb(55, 61, 65); cursor: pointer; font-family: &amp;quot;Roboto Mono&amp;quot;, Consolas, Menlo, Courier, monospace; text-align: start;&quot; class=&quot;link dark-text&quot;&gt;id=11992&lt;/a&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="40" y="130" width="440" height="220" as="geometry" />
+        <mxCell id="DSpzE5suGisKfg1SqeY_-1" value="保存群发任务" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="100" y="140" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="AzDHVjjF9Ip_TZPcEUNr-5" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="AzDHVjjF9Ip_TZPcEUNr-2" target="AzDHVjjF9Ip_TZPcEUNr-4">
+        <mxCell id="DSpzE5suGisKfg1SqeY_-5" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="DSpzE5suGisKfg1SqeY_-2" target="DSpzE5suGisKfg1SqeY_-4">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="AzDHVjjF9Ip_TZPcEUNr-2" value="定时任务扫描: &lt;br&gt;id=11991&lt;br&gt;MsgSendTask:&amp;nbsp;&lt;a style=&quot;margin: 0px; padding: 0px; box-sizing: border-box; background-color: rgb(255, 255, 255); color: rgb(55, 61, 65); cursor: pointer; font-family: &amp;quot;Roboto Mono&amp;quot;, Consolas, Menlo, Courier, monospace; text-align: start;&quot; class=&quot;link dark-text&quot;&gt;2023-08-30&lt;/a&gt;&lt;span style=&quot;margin: 0px; padding: 0px; box-sizing: border-box; color: rgb(38, 38, 38); font-family: &amp;quot;Roboto Mono&amp;quot;, Consolas, Menlo, Courier, monospace; text-align: start; background-color: rgb(255, 255, 255);&quot; class=&quot;dark-tag-colon&quot;&gt; &lt;/span&gt;&lt;a style=&quot;margin: 0px; padding: 0px; box-sizing: border-box; background-color: rgb(255, 255, 255); color: rgb(55, 61, 65); cursor: pointer; font-family: &amp;quot;Roboto Mono&amp;quot;, Consolas, Menlo, Courier, monospace; text-align: start;&quot; class=&quot;link dark-text&quot;&gt;&lt;span style=&quot;margin: 0px; padding: 0px; box-sizing: border-box;&quot;&gt;13&lt;/span&gt;&lt;/a&gt;&lt;span style=&quot;margin: 0px; padding: 0px; box-sizing: border-box; color: rgb(38, 38, 38); font-family: &amp;quot;Roboto Mono&amp;quot;, Consolas, Menlo, Courier, monospace; text-align: start; background-color: rgb(255, 255, 255);&quot; class=&quot;dark-tag-colon&quot;&gt;:&lt;/span&gt;&lt;a style=&quot;margin: 0px; padding: 0px; box-sizing: border-box; background-color: rgb(255, 255, 255); color: rgb(55, 61, 65); cursor: pointer; font-family: &amp;quot;Roboto Mono&amp;quot;, Consolas, Menlo, Courier, monospace; text-align: start;&quot; class=&quot;link dark-text&quot;&gt;&lt;span style=&quot;margin: 0px; padding: 0px; box-sizing: border-box;&quot;&gt;32&lt;/span&gt;&lt;/a&gt;&lt;span style=&quot;margin: 0px; padding: 0px; box-sizing: border-box; color: rgb(38, 38, 38); font-family: &amp;quot;Roboto Mono&amp;quot;, Consolas, Menlo, Courier, monospace; text-align: start; background-color: rgb(255, 255, 255);&quot; class=&quot;dark-tag-colon&quot;&gt;:&lt;/span&gt;&lt;a style=&quot;margin: 0px; padding: 0px; box-sizing: border-box; background-color: rgb(255, 255, 255); text-decoration-line: underline; cursor: pointer; font-family: &amp;quot;Roboto Mono&amp;quot;, Consolas, Menlo, Courier, monospace; text-align: start; color: rgb(0, 112, 204) !important;&quot; class=&quot;link dark-text&quot;&gt;&lt;span style=&quot;margin: 0px; padding: 0px; box-sizing: border-box;&quot;&gt;00.045&lt;/span&gt;&lt;/a&gt;" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="710" y="160" width="350" height="160" as="geometry" />
+        <mxCell id="DSpzE5suGisKfg1SqeY_-6" value="typeSending" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="DSpzE5suGisKfg1SqeY_-5">
+          <mxGeometry x="0.1535" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
         </mxCell>
-        <mxCell id="AzDHVjjF9Ip_TZPcEUNr-4" value="task_id=934439960132247807," style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="685" y="440" width="400" height="290" as="geometry" />
+        <mxCell id="DSpzE5suGisKfg1SqeY_-2" value="MsgBulkSendConsumer" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="465" y="140" width="175" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="DSpzE5suGisKfg1SqeY_-8" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="DSpzE5suGisKfg1SqeY_-4" target="DSpzE5suGisKfg1SqeY_-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="DSpzE5suGisKfg1SqeY_-4" value="发送大任务的一条子任务到MQ" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="800" y="140" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="DSpzE5suGisKfg1SqeY_-10" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="DSpzE5suGisKfg1SqeY_-7" target="DSpzE5suGisKfg1SqeY_-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="DSpzE5suGisKfg1SqeY_-7" value="MsgBulkDetailConsumer.sendMsg" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="760" y="270" width="200" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="DSpzE5suGisKfg1SqeY_-12" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="DSpzE5suGisKfg1SqeY_-9" target="DSpzE5suGisKfg1SqeY_-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="DSpzE5suGisKfg1SqeY_-9" value="更新msg表的状态" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="800" y="420" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="DSpzE5suGisKfg1SqeY_-14" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="DSpzE5suGisKfg1SqeY_-11" target="DSpzE5suGisKfg1SqeY_-13">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="DSpzE5suGisKfg1SqeY_-11" value="发送下一条消息" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="600" y="420" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="DSpzE5suGisKfg1SqeY_-13" value="1. 大任务的最后一个子任务, 修改Record表的状态,&amp;nbsp;typeSent, 发送下一个typeWaiting的大任务给MsgBulkSendConsumer&lt;br&gt;, 如果没有, 就将当前大任务的发送条数+1&lt;br&gt;2. 不是最后一个子任务, 通过全局配置找到消息间隔, 并发送消息给MsgBulkDetailConsumer,&amp;nbsp;&lt;span style=&quot;background-color: initial;&quot;&gt;MQ&lt;/span&gt;" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="280" y="380" width="200" height="160" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
