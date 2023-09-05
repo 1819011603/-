@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2023-09-05T08:48:12.480Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36" etag="KEAVLYkhPG_M_ttaBc_w" version="21.7.1" type="github">
+<mxfile host="app.diagrams.net" modified="2023-09-05T09:03:51.468Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36" etag="-eQOHfj2t0T5ckUR5jQG" version="21.7.1" type="github">
   <diagram name="第 1 页" id="apNaEhyamkYL7sytxcvm">
-    <mxGraphModel dx="1257" dy="656" grid="0" gridSize="10" guides="0" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+    <mxGraphModel dx="1085" dy="566" grid="0" gridSize="10" guides="0" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -302,6 +302,104 @@
         </mxCell>
         <mxCell id="iOnOOWXSFDz_phXrUZbb-113" value="AsyncSelectTask" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="740" y="985" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="iOnOOWXSFDz_phXrUZbb-116" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="iOnOOWXSFDz_phXrUZbb-114" target="iOnOOWXSFDz_phXrUZbb-115">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="iOnOOWXSFDz_phXrUZbb-114" value="线程池&amp;nbsp;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="603" y="1674" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="iOnOOWXSFDz_phXrUZbb-120" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="iOnOOWXSFDz_phXrUZbb-115" target="iOnOOWXSFDz_phXrUZbb-119">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="iOnOOWXSFDz_phXrUZbb-121" value="没有" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="iOnOOWXSFDz_phXrUZbb-120">
+          <mxGeometry x="-0.1118" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="iOnOOWXSFDz_phXrUZbb-123" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="iOnOOWXSFDz_phXrUZbb-115" target="iOnOOWXSFDz_phXrUZbb-122">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="iOnOOWXSFDz_phXrUZbb-124" value="达到" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="iOnOOWXSFDz_phXrUZbb-123">
+          <mxGeometry x="0.0603" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="iOnOOWXSFDz_phXrUZbb-115" value="线程数是否达到核心线程数" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="803" y="1674" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="iOnOOWXSFDz_phXrUZbb-118" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="iOnOOWXSFDz_phXrUZbb-117" target="iOnOOWXSFDz_phXrUZbb-114">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="iOnOOWXSFDz_phXrUZbb-117" value="任务提交" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="409" y="1673" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="iOnOOWXSFDz_phXrUZbb-132" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="iOnOOWXSFDz_phXrUZbb-119" target="iOnOOWXSFDz_phXrUZbb-131">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="iOnOOWXSFDz_phXrUZbb-119" value="增加核心线程" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="1003" y="1674" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="iOnOOWXSFDz_phXrUZbb-126" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="iOnOOWXSFDz_phXrUZbb-122" target="iOnOOWXSFDz_phXrUZbb-125">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="iOnOOWXSFDz_phXrUZbb-127" value="没有" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="iOnOOWXSFDz_phXrUZbb-126">
+          <mxGeometry x="0.0059" y="-2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="iOnOOWXSFDz_phXrUZbb-129" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="iOnOOWXSFDz_phXrUZbb-122" target="iOnOOWXSFDz_phXrUZbb-128">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="iOnOOWXSFDz_phXrUZbb-130" value="达到" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="iOnOOWXSFDz_phXrUZbb-129">
+          <mxGeometry x="-0.3221" y="4" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="iOnOOWXSFDz_phXrUZbb-122" value="判断队列是否已满" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="803" y="1814" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="iOnOOWXSFDz_phXrUZbb-134" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="iOnOOWXSFDz_phXrUZbb-125" target="iOnOOWXSFDz_phXrUZbb-131">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1202.9999999999995" y="1844" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="iOnOOWXSFDz_phXrUZbb-138" value="等待" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="iOnOOWXSFDz_phXrUZbb-134">
+          <mxGeometry x="-0.33" y="-2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="iOnOOWXSFDz_phXrUZbb-125" value="放入队列" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="1003" y="1814" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="iOnOOWXSFDz_phXrUZbb-140" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="iOnOOWXSFDz_phXrUZbb-128" target="iOnOOWXSFDz_phXrUZbb-139">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="iOnOOWXSFDz_phXrUZbb-144" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="iOnOOWXSFDz_phXrUZbb-128" target="iOnOOWXSFDz_phXrUZbb-143">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="iOnOOWXSFDz_phXrUZbb-128" value="看是否达到最大线程池数" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="803" y="1954" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="iOnOOWXSFDz_phXrUZbb-131" value="处理任务" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="1203" y="1674" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="iOnOOWXSFDz_phXrUZbb-142" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="iOnOOWXSFDz_phXrUZbb-139" target="iOnOOWXSFDz_phXrUZbb-131">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1202.9999999999995" y="1984" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="iOnOOWXSFDz_phXrUZbb-139" value="增加非核心线程" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="1003" y="1954" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="iOnOOWXSFDz_phXrUZbb-146" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="iOnOOWXSFDz_phXrUZbb-143" target="iOnOOWXSFDz_phXrUZbb-145">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="iOnOOWXSFDz_phXrUZbb-143" value="达到" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="803" y="2094" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="iOnOOWXSFDz_phXrUZbb-145" value="放弃任务逻辑" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="1003" y="2094" width="120" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
