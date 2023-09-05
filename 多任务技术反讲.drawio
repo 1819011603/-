@@ -1,9 +1,191 @@
-<mxfile host="app.diagrams.net" modified="2023-09-04T01:29:56.795Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36" version="21.7.1" etag="SaP5CS65sVvGt7J-7QfL" type="github">
+<mxfile host="app.diagrams.net" modified="2023-09-05T03:19:07.917Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36" etag="Ouz3fb85s_UNMqVwnfkx" version="21.7.1" type="github">
   <diagram name="第 1 页" id="apNaEhyamkYL7sytxcvm">
-    <mxGraphModel>
+    <mxGraphModel dx="2985" dy="1468" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="iOnOOWXSFDz_phXrUZbb-26" value="" style="rounded=0;whiteSpace=none;html=1;" vertex="1" parent="1">
+          <mxGeometry x="60" y="110" width="1890" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="iOnOOWXSFDz_phXrUZbb-25" value="" style="rounded=0;whiteSpace=none;html=1;" vertex="1" parent="1">
+          <mxGeometry x="620" y="270" width="890" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="iOnOOWXSFDz_phXrUZbb-3" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="iOnOOWXSFDz_phXrUZbb-1" target="iOnOOWXSFDz_phXrUZbb-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="iOnOOWXSFDz_phXrUZbb-1" value="前端立即发送" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="120" y="160" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="iOnOOWXSFDz_phXrUZbb-5" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="iOnOOWXSFDz_phXrUZbb-2" target="iOnOOWXSFDz_phXrUZbb-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="iOnOOWXSFDz_phXrUZbb-2" value="insertAll" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="280" y="160" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="iOnOOWXSFDz_phXrUZbb-50" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="iOnOOWXSFDz_phXrUZbb-4" target="iOnOOWXSFDz_phXrUZbb-49">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="iOnOOWXSFDz_phXrUZbb-4" value="写入record和msg_new表" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="440" y="160" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="iOnOOWXSFDz_phXrUZbb-24" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="iOnOOWXSFDz_phXrUZbb-6" target="iOnOOWXSFDz_phXrUZbb-23">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="iOnOOWXSFDz_phXrUZbb-42" value="多任务" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="iOnOOWXSFDz_phXrUZbb-24">
+          <mxGeometry x="-0.2386" y="5" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="iOnOOWXSFDz_phXrUZbb-53" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="iOnOOWXSFDz_phXrUZbb-6" target="iOnOOWXSFDz_phXrUZbb-52">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="iOnOOWXSFDz_phXrUZbb-54" value="现有" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="iOnOOWXSFDz_phXrUZbb-53">
+          <mxGeometry x="-0.3016" y="-5" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="iOnOOWXSFDz_phXrUZbb-6" value="根据wxId获取版本,判断版本是否是多任务版本,将结果保存到ThreadLocal中" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="720" y="160" width="170" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="iOnOOWXSFDz_phXrUZbb-12" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="iOnOOWXSFDz_phXrUZbb-9" target="iOnOOWXSFDz_phXrUZbb-11">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1282" y="290" />
+              <mxPoint x="1435" y="290" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="iOnOOWXSFDz_phXrUZbb-9" value="1. 检查当前任务是不是已取消的状态, 如果有, 流程结束&lt;br&gt;2. 检查当前任务是不是暂停中的状态, 如果有, 改为暂停中,流程结束" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1169" y="300" width="226" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="iOnOOWXSFDz_phXrUZbb-22" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="iOnOOWXSFDz_phXrUZbb-11" target="iOnOOWXSFDz_phXrUZbb-21">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="iOnOOWXSFDz_phXrUZbb-11" value="设置发送中,找到大任务的第一个子任务.到MsgBulkDetailConsumer&lt;span style=&quot;background-color: initial;&quot;&gt;&amp;nbsp;&lt;/span&gt;" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1395" y="160" width="250" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="iOnOOWXSFDz_phXrUZbb-14" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="iOnOOWXSFDz_phXrUZbb-13" target="iOnOOWXSFDz_phXrUZbb-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="iOnOOWXSFDz_phXrUZbb-13" value="1. 检查当前任务是不是排队中,已取消的状态, 如果有, 流程结束&lt;br&gt;2. 检查当前任务是不是暂停中, 发送中的状态, 如果有, 改为暂停中,流程结束" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1140" y="145" width="226" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="iOnOOWXSFDz_phXrUZbb-21" value="原有逻辑" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1705" y="160" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="iOnOOWXSFDz_phXrUZbb-45" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="iOnOOWXSFDz_phXrUZbb-23" target="iOnOOWXSFDz_phXrUZbb-44">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="iOnOOWXSFDz_phXrUZbb-23" value="record的主键id设置redis锁, 过期时间为10s, 不删除" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="745" y="315" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="iOnOOWXSFDz_phXrUZbb-27" value="修改逻辑" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="640" y="384" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="iOnOOWXSFDz_phXrUZbb-28" value="原有逻辑" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="80" y="115" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="iOnOOWXSFDz_phXrUZbb-30" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="iOnOOWXSFDz_phXrUZbb-31" target="iOnOOWXSFDz_phXrUZbb-33">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="iOnOOWXSFDz_phXrUZbb-31" value="前端定时发送" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="60" y="565" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="iOnOOWXSFDz_phXrUZbb-32" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="iOnOOWXSFDz_phXrUZbb-33" target="iOnOOWXSFDz_phXrUZbb-35">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="iOnOOWXSFDz_phXrUZbb-33" value="BulkMsgSendTimer, 每60s处理一次" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="260" y="565" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="iOnOOWXSFDz_phXrUZbb-34" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="iOnOOWXSFDz_phXrUZbb-35" target="iOnOOWXSFDz_phXrUZbb-38">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="iOnOOWXSFDz_phXrUZbb-59" value="现有" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="iOnOOWXSFDz_phXrUZbb-34">
+          <mxGeometry y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="iOnOOWXSFDz_phXrUZbb-61" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="iOnOOWXSFDz_phXrUZbb-35" target="iOnOOWXSFDz_phXrUZbb-60">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="iOnOOWXSFDz_phXrUZbb-62" value="多任务" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="iOnOOWXSFDz_phXrUZbb-61">
+          <mxGeometry x="-0.2625" y="-3" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="iOnOOWXSFDz_phXrUZbb-35" value="根据wxId获取版本,判断版本是否是多任务版本,将结果保存到ThreadLocal中" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="460" y="565" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="iOnOOWXSFDz_phXrUZbb-36" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="iOnOOWXSFDz_phXrUZbb-38" target="iOnOOWXSFDz_phXrUZbb-39">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="iOnOOWXSFDz_phXrUZbb-37" value="现有" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="iOnOOWXSFDz_phXrUZbb-36">
+          <mxGeometry x="-0.0667" y="-1" relative="1" as="geometry">
+            <mxPoint y="1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="iOnOOWXSFDz_phXrUZbb-38" value="检查当前wxId的任务是不是暂停中, 发送,Mq排队中的状态, 如果有, 流程结束" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="660" y="565" width="170" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="iOnOOWXSFDz_phXrUZbb-66" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="iOnOOWXSFDz_phXrUZbb-39" target="iOnOOWXSFDz_phXrUZbb-65">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="iOnOOWXSFDz_phXrUZbb-39" value="只发送第一个大任务给MsgBulkSendConsumer" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="920" y="550" width="226" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="iOnOOWXSFDz_phXrUZbb-46" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="iOnOOWXSFDz_phXrUZbb-44" target="iOnOOWXSFDz_phXrUZbb-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="iOnOOWXSFDz_phXrUZbb-44" value="根据threadlocal结果" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="945" y="315" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="iOnOOWXSFDz_phXrUZbb-49" value="发送MsgBulkSendConsumer" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="580" y="160" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="iOnOOWXSFDz_phXrUZbb-51" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="iOnOOWXSFDz_phXrUZbb-49" target="iOnOOWXSFDz_phXrUZbb-6">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="830" y="360" as="sourcePoint" />
+            <mxPoint x="880" y="310" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="iOnOOWXSFDz_phXrUZbb-58" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="iOnOOWXSFDz_phXrUZbb-52" target="iOnOOWXSFDz_phXrUZbb-13">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="iOnOOWXSFDz_phXrUZbb-52" value="根据threadlocal结果" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="960" y="160" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="iOnOOWXSFDz_phXrUZbb-64" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="iOnOOWXSFDz_phXrUZbb-60" target="iOnOOWXSFDz_phXrUZbb-63">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="iOnOOWXSFDz_phXrUZbb-60" value="检查当前wxId的任务是不是暂停中的状态, 如果有, 流程结束" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="460" y="705" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="iOnOOWXSFDz_phXrUZbb-68" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="iOnOOWXSFDz_phXrUZbb-63" target="iOnOOWXSFDz_phXrUZbb-65">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="890" y="735" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="iOnOOWXSFDz_phXrUZbb-63" value="发送所有大任务给MsgBulkSendConsumer" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="660" y="705" width="140" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="iOnOOWXSFDz_phXrUZbb-65" value="原有逻辑" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1279" y="565" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="iOnOOWXSFDz_phXrUZbb-71" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1" target="iOnOOWXSFDz_phXrUZbb-49">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="640" y="510" as="sourcePoint" />
+            <mxPoint x="720" y="440" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="iOnOOWXSFDz_phXrUZbb-72" value="" style="endArrow=none;html=1;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" target="iOnOOWXSFDz_phXrUZbb-65">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="640" y="510" as="sourcePoint" />
+            <mxPoint x="720" y="440" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1340" y="510" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
