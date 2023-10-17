@@ -1,9 +1,24 @@
-<mxfile host="app.diagrams.net" modified="2023-10-17T04:55:17.242Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36" version="22.0.4" etag="Rim7vn1L1xAvUxrhcL5h" type="github">
+<mxfile host="app.diagrams.net" modified="2023-10-17T04:59:10.232Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36" etag="DvjdXVyfSzaMmRdqXzFQ" version="22.0.4" type="github">
   <diagram name="第 1 页" id="A6P0WP1tQKVxjTYPJzn7">
-    <mxGraphModel>
+    <mxGraphModel dx="1146" dy="587" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="i4adGCitpPR6OB6Mx2Sh-3" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="i4adGCitpPR6OB6Mx2Sh-1" target="i4adGCitpPR6OB6Mx2Sh-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="i4adGCitpPR6OB6Mx2Sh-1" value="&lt;div style=&quot;background-color:#1e1f22;color:#a9b7c6;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;&lt;pre&gt;checkChatroom&lt;/pre&gt;&lt;pre&gt;1. 群人数&amp;gt;1&lt;/pre&gt;&lt;pre&gt;2. 群机器人&lt;/pre&gt;&lt;pre&gt;3. 白名单&lt;/pre&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="172" y="170" width="150" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="i4adGCitpPR6OB6Mx2Sh-5" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="i4adGCitpPR6OB6Mx2Sh-2" target="i4adGCitpPR6OB6Mx2Sh-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="i4adGCitpPR6OB6Mx2Sh-2" value="&lt;div style=&quot;background-color:#1e1f22;color:#a9b7c6;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;&lt;pre&gt; facadeOpenApiManager.queryMemberInRooms&lt;/pre&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="415" y="190" width="355" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="i4adGCitpPR6OB6Mx2Sh-4" value="" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="967.5" y="190" width="120" height="60" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
