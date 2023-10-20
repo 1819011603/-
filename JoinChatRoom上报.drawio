@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-10-20T13:46:18.358Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36" etag="lmf-tYmvFVv2vM4JioiW" version="22.0.6" type="github">
+<mxfile host="app.diagrams.net" modified="2023-10-20T15:05:32.675Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36" etag="hJzlNNNEKdDnnt6pkXUK" version="22.0.6" type="github">
   <diagram name="第 1 页" id="oOwmf1uKx6_3mX6nvs2F">
     <mxGraphModel dx="1146" dy="587" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
       <root>
@@ -34,8 +34,98 @@
         <mxCell id="09XcRlOtonNwv0cxY0W5-10" value="MsgConsumeType.NEW_CHATROOM_MEMBER:&lt;br&gt;&lt;span style=&quot;&quot;&gt;&lt;span style=&quot;&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;/span&gt;用户进群增量上报,&lt;br&gt;MsgConsumeConfig:&lt;br&gt;map配置表, 配置合适的consumer" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="1020" y="270" width="320" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="09XcRlOtonNwv0cxY0W5-12" value="RocketMqConsumer.consumer" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="1520" y="270" width="120" height="60" as="geometry" />
+        <mxCell id="09XcRlOtonNwv0cxY0W5-17" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="09XcRlOtonNwv0cxY0W5-12" target="09XcRlOtonNwv0cxY0W5-16">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="09XcRlOtonNwv0cxY0W5-12" value="RocketMqConsumer.consumer;&lt;br&gt;&lt;br&gt;msgConsumeMap.get(type);" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1520" y="270" width="200" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="09XcRlOtonNwv0cxY0W5-19" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="09XcRlOtonNwv0cxY0W5-16" target="09XcRlOtonNwv0cxY0W5-18">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="09XcRlOtonNwv0cxY0W5-16" value="&lt;b&gt;InviteChatroomConsumer&lt;/b&gt;" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1840" y="270" width="170" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="09XcRlOtonNwv0cxY0W5-21" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="09XcRlOtonNwv0cxY0W5-18" target="09XcRlOtonNwv0cxY0W5-20">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="09XcRlOtonNwv0cxY0W5-18" value="&lt;b&gt;SS-ROBOT-SERVER&lt;/b&gt;" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="2115" y="270" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="09XcRlOtonNwv0cxY0W5-23" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="09XcRlOtonNwv0cxY0W5-20" target="09XcRlOtonNwv0cxY0W5-22">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="09XcRlOtonNwv0cxY0W5-20" value="writePrismRecord.do" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="2116" y="410" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="09XcRlOtonNwv0cxY0W5-25" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="09XcRlOtonNwv0cxY0W5-22" target="09XcRlOtonNwv0cxY0W5-24">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="09XcRlOtonNwv0cxY0W5-22" value="doWritePrismRecord" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1915" y="410" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="09XcRlOtonNwv0cxY0W5-27" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="09XcRlOtonNwv0cxY0W5-24" target="09XcRlOtonNwv0cxY0W5-26">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="09XcRlOtonNwv0cxY0W5-24" value="JoinChatroomActor.doAct" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1640" y="410" width="195" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="09XcRlOtonNwv0cxY0W5-29" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="09XcRlOtonNwv0cxY0W5-26" target="09XcRlOtonNwv0cxY0W5-28">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="09XcRlOtonNwv0cxY0W5-26" value="&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;1. 修改&lt;/div&gt;storm_sun_chatroom表&lt;br&gt;&lt;br&gt;&lt;div&gt;UPDATE um.storm_sun_chatroom&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; SET member_count = #{memberCount,jdbcType=SMALLINT}&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; WHERE chatroom = #{chatroom,jdbcType=VARCHAR}&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;2. 发送Mq&amp;nbsp;&amp;nbsp;&lt;/div&gt;topic&lt;span style=&quot;margin: 0px; padding: 0px; box-sizing: border-box; color: rgb(38, 38, 38); font-family: &amp;quot;Roboto Mono&amp;quot;, Consolas, Menlo, Courier, monospace; text-align: start; background-color: rgb(255, 255, 255);&quot; data-index=&quot;569&quot; class=&quot;&quot;&gt; &lt;/span&gt;&lt;span style=&quot;margin: 0px; padding: 0px; box-sizing: border-box; color: rgb(38, 38, 38); font-family: &amp;quot;Roboto Mono&amp;quot;, Consolas, Menlo, Courier, monospace; text-align: start; background-color: rgb(255, 255, 255);&quot; data-index=&quot;570&quot; class=&quot;&quot;&gt;[&lt;/span&gt;&lt;span style=&quot;margin: 0px; padding: 0px; box-sizing: border-box; color: var(--sls-public-txt-color-primary); cursor: pointer; font-family: &amp;quot;Roboto Mono&amp;quot;, Consolas, Menlo, Courier, monospace; text-align: start; background-color: rgb(255, 255, 255);&quot; data-spm-anchor-id=&quot;5176.2020520112.0.i10.f87d34c0O4rrCx&quot; data-index=&quot;571&quot; class=&quot;sls-logDisplay-str-style&quot;&gt;test-ss-robot-server&lt;/span&gt;&lt;span style=&quot;margin: 0px; padding: 0px; box-sizing: border-box; color: rgb(38, 38, 38); font-family: &amp;quot;Roboto Mono&amp;quot;, Consolas, Menlo, Courier, monospace; text-align: start; background-color: rgb(255, 255, 255);&quot; data-index=&quot;591&quot; class=&quot;&quot;&gt;]&lt;/span&gt;&lt;span style=&quot;margin: 0px; padding: 0px; box-sizing: border-box; color: rgb(38, 38, 38); font-family: &amp;quot;Roboto Mono&amp;quot;, Consolas, Menlo, Courier, monospace; text-align: start; background-color: rgb(255, 255, 255);&quot; data-index=&quot;592&quot; class=&quot;&quot;&gt; &lt;/span&gt;&lt;span style=&quot;margin: 0px; padding: 0px; box-sizing: border-box; color: var(--sls-public-txt-color-primary); cursor: pointer; font-family: &amp;quot;Roboto Mono&amp;quot;, Consolas, Menlo, Courier, monospace; text-align: start; background-color: rgb(255, 255, 255);&quot; data-index=&quot;593&quot; class=&quot;sls-logDisplay-str-style&quot;&gt;tags&lt;/span&gt;&lt;span style=&quot;margin: 0px; padding: 0px; box-sizing: border-box; color: rgb(38, 38, 38); font-family: &amp;quot;Roboto Mono&amp;quot;, Consolas, Menlo, Courier, monospace; text-align: start; background-color: rgb(255, 255, 255);&quot; data-index=&quot;597&quot; class=&quot;&quot;&gt;[&lt;/span&gt;&lt;span style=&quot;margin: 0px; padding: 0px; box-sizing: border-box; color: var(--sls-public-txt-color-primary); cursor: pointer; font-family: &amp;quot;Roboto Mono&amp;quot;, Consolas, Menlo, Courier, monospace; text-align: start; background-color: rgb(255, 255, 255);&quot; data-index=&quot;598&quot; class=&quot;sls-logDisplay-str-style&quot;&gt;ss-tag-join-chatroom&lt;/span&gt;&lt;span style=&quot;margin: 0px; padding: 0px; box-sizing: border-box; color: rgb(38, 38, 38); font-family: &amp;quot;Roboto Mono&amp;quot;, Consolas, Menlo, Courier, monospace; text-align: start; background-color: rgb(255, 255, 255);&quot; data-index=&quot;618&quot; class=&quot;&quot;&gt;]&lt;/span&gt;" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1000" y="370" width="542.5" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="09XcRlOtonNwv0cxY0W5-31" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="09XcRlOtonNwv0cxY0W5-28" target="09XcRlOtonNwv0cxY0W5-30">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="09XcRlOtonNwv0cxY0W5-28" value="&lt;b&gt;SS-MSG-CENTER&lt;/b&gt;" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="588.75" y="415" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="09XcRlOtonNwv0cxY0W5-33" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="09XcRlOtonNwv0cxY0W5-30" target="09XcRlOtonNwv0cxY0W5-32">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="09XcRlOtonNwv0cxY0W5-30" value="MsgConsumer.initConsumer&lt;br&gt;ConsumerRelatedMap注册了topic和consumerService的映射,&lt;br&gt;ss-robot-server和chatMsgConsumerService,&lt;br&gt;ss-robot-server-disorder和chatMsgConsumerService" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="200" y="400" width="320" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="09XcRlOtonNwv0cxY0W5-35" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="09XcRlOtonNwv0cxY0W5-32" target="09XcRlOtonNwv0cxY0W5-34">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="09XcRlOtonNwv0cxY0W5-32" value="ChatMsgConsumerService,&lt;br&gt;msgServiceContainer.getMsgConsumerServiceMapByTag()维护&lt;br&gt;&lt;b&gt;(tag,(source, List&amp;lt;&amp;nbsp;MsgConsumerService&amp;gt;))&lt;/b&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;的映射关系(tags4Apply和&lt;/span&gt;source4Apply)&lt;br&gt;source:&amp;nbsp;&lt;span style=&quot;background-color: rgb(30, 31, 34); font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt; color: rgb(98, 151, 85); font-style: italic;&quot;&gt;1.&lt;/span&gt;&lt;span style=&quot;background-color: rgb(30, 31, 34); font-size: 9.8pt; color: rgb(98, 151, 85); font-style: italic; font-family: Menlo-Regular, monospace;&quot;&gt;微信 &lt;/span&gt;&lt;span style=&quot;background-color: rgb(30, 31, 34); font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt; color: rgb(98, 151, 85); font-style: italic;&quot;&gt;2.&lt;/span&gt;&lt;span style=&quot;background-color: rgb(30, 31, 34); font-size: 9.8pt; color: rgb(98, 151, 85); font-style: italic; font-family: Menlo-Regular, monospace;&quot;&gt;企业微信&lt;/span&gt;" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="108.52" y="560" width="502.97" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="09XcRlOtonNwv0cxY0W5-37" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="09XcRlOtonNwv0cxY0W5-34" target="09XcRlOtonNwv0cxY0W5-36">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="09XcRlOtonNwv0cxY0W5-34" value="processMyPrismRecord(myPrismRecords, key, sourceMap)" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="205" y="700" width="310" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="09XcRlOtonNwv0cxY0W5-39" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="09XcRlOtonNwv0cxY0W5-36" target="09XcRlOtonNwv0cxY0W5-38">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="09XcRlOtonNwv0cxY0W5-36" value="根据source获取List&amp;lt;MsgConsumerService&amp;gt; msgConsumerServices&amp;nbsp;" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="241" y="840" width="240" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="09XcRlOtonNwv0cxY0W5-41" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="09XcRlOtonNwv0cxY0W5-38" target="09XcRlOtonNwv0cxY0W5-40">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="09XcRlOtonNwv0cxY0W5-38" value="msgConsumerService.process(prismRecords);" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="226.5" y="980" width="269" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="09XcRlOtonNwv0cxY0W5-43" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="09XcRlOtonNwv0cxY0W5-40" target="09XcRlOtonNwv0cxY0W5-42">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="09XcRlOtonNwv0cxY0W5-40" value="WkChatroomJoinService" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="650" y="980" width="220" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="09XcRlOtonNwv0cxY0W5-45" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="09XcRlOtonNwv0cxY0W5-42" target="09XcRlOtonNwv0cxY0W5-44">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="09XcRlOtonNwv0cxY0W5-42" value="AbstractMsgConsumer.process处理:&lt;br&gt;1.&amp;nbsp;msgFilter过滤消息&lt;br&gt;2. 通过appendMsgMergeService进行合并消息&lt;span style=&quot;background-color: initial;&quot;&gt;(例如进群&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;wkChatroomJoinMergeService&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;)&amp;nbsp; 可以生成唯一id&lt;br&gt;&lt;/span&gt;3.&amp;nbsp;output(afterMergeMessages); 写入数据库和发送MQ" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1000" y="870" width="420" height="280" as="geometry" />
+        </mxCell>
+        <mxCell id="09XcRlOtonNwv0cxY0W5-44" value="使用databus将进群记录插入urobot.ss_record_chatroom_join&lt;span style=&quot;background-color: initial;&quot;&gt;,&lt;/span&gt;&lt;br&gt;发送MQ,&lt;br&gt;topic为ss-msg-chatroom-join:wk-chatroom-join" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1650" y="940" width="290" height="140" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
