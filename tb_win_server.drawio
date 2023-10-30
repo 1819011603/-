@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-10-30T03:31:18.989Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36" etag="1eGbDghAq99-ZIFBjoWO" version="22.0.8" type="github">
+<mxfile host="app.diagrams.net" modified="2023-10-30T03:34:33.345Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36" etag="nkdGsQjO41w2DH-QlXs_" version="22.0.8" type="github">
   <diagram name="第 1 页" id="XwyXtLiTSCjEhpWMpxt5">
     <mxGraphModel dx="906" dy="587" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -48,6 +48,30 @@
         </mxCell>
         <mxCell id="brs4Lbw3h4MbE__pO9lw-14" value="开启异步:&amp;nbsp;EnableAsync" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
           <mxGeometry x="2030" y="190" width="200" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="brs4Lbw3h4MbE__pO9lw-18" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="brs4Lbw3h4MbE__pO9lw-16" target="brs4Lbw3h4MbE__pO9lw-17">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="brs4Lbw3h4MbE__pO9lw-16" value="内部校验Servlet :&lt;br&gt;&lt;div&gt;@ServletComponentScan&lt;/div&gt;&lt;div&gt;(basePackages = &quot;com.baijia.tongbao.auth&quot;)&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="70" y="550" width="200" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="brs4Lbw3h4MbE__pO9lw-17" value="LogIdFilter: 设置trace, 使用MDC, key为logger_id&lt;span style=&quot;background-color: initial;&quot;&gt;,&amp;nbsp; value为UUID&lt;/span&gt;" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="350" y="430" width="200" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="brs4Lbw3h4MbE__pO9lw-19" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" target="brs4Lbw3h4MbE__pO9lw-20">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="280" y="650" as="sourcePoint" />
+            <mxPoint x="310" y="780" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="270" y="650" />
+              <mxPoint x="270" y="651" />
+              <mxPoint x="310" y="651" />
+              <mxPoint x="310" y="820" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="brs4Lbw3h4MbE__pO9lw-20" value="内部校验Servlet :&lt;br&gt;&lt;div&gt;@ServletComponentScan&lt;/div&gt;&lt;div&gt;(basePackages = &quot;com.baijia.tongbao.auth&quot;)&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="350" y="720" width="200" height="200" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
