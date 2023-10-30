@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-10-30T03:30:02.172Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36" etag="LaKMNo9Rcjs-h5eJ8j8D" version="22.0.8" type="github">
+<mxfile host="app.diagrams.net" modified="2023-10-30T03:31:18.989Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36" etag="1eGbDghAq99-ZIFBjoWO" version="22.0.8" type="github">
   <diagram name="第 1 页" id="XwyXtLiTSCjEhpWMpxt5">
     <mxGraphModel dx="906" dy="587" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -25,7 +25,7 @@
         <mxCell id="brs4Lbw3h4MbE__pO9lw-9" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="brs4Lbw3h4MbE__pO9lw-6" target="brs4Lbw3h4MbE__pO9lw-8">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="brs4Lbw3h4MbE__pO9lw-6" value="内部校验Servlet :&lt;br&gt;ServletComponentScan" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+        <mxCell id="brs4Lbw3h4MbE__pO9lw-6" value="内部校验Servlet :&lt;br&gt;&lt;div&gt;@ServletComponentScan&lt;/div&gt;&lt;div&gt;(basePackages = &quot;com.baijia.tongbao.auth&quot;)&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
           <mxGeometry x="910" y="190" width="200" height="200" as="geometry" />
         </mxCell>
         <mxCell id="brs4Lbw3h4MbE__pO9lw-11" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="brs4Lbw3h4MbE__pO9lw-8" target="brs4Lbw3h4MbE__pO9lw-10">
