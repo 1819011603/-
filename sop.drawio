@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-11-11T06:37:12.147Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36" etag="cinwi0lmYvUVUYc9J6gY" version="22.1.0" type="github">
+<mxfile host="app.diagrams.net" modified="2023-11-11T06:38:48.007Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36" etag="Ae17bW3XjA1N_ZqEEDoU" version="22.1.0" type="github">
   <diagram name="第 1 页" id="a9w4p1sG9YkQIjeEGbVO">
     <mxGraphModel dx="2739" dy="978" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -57,11 +57,11 @@
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="2LKEeEdWMR6j1Iujc3-p-15" value="增加机器人互斥的校验" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="2LKEeEdWMR6j1Iujc3-p-15" value="增加机器人互斥的校验和方案数校验" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="165" y="740" width="230" height="60" as="geometry" />
         </mxCell>
         <mxCell id="2LKEeEdWMR6j1Iujc3-p-17" value="错误信息: 某某机器人已在方案名称里面" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="345" y="910" width="235" height="60" as="geometry" />
+          <mxGeometry x="346" y="910" width="235" height="60" as="geometry" />
         </mxCell>
         <mxCell id="2LKEeEdWMR6j1Iujc3-p-26" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="2LKEeEdWMR6j1Iujc3-p-20" target="2LKEeEdWMR6j1Iujc3-p-25">
           <mxGeometry relative="1" as="geometry" />
