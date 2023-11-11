@@ -1,21 +1,21 @@
-<mxfile host="app.diagrams.net" modified="2023-11-11T08:04:48.045Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36" etag="vr0PtxP__9xcmieeGwu6" version="22.1.0" type="github">
+<mxfile host="app.diagrams.net" modified="2023-11-11T10:29:18.900Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36" etag="7ys9rA9OLIWzuypOeQbv" version="22.1.0" type="github">
   <diagram name="第 1 页" id="a9w4p1sG9YkQIjeEGbVO">
-    <mxGraphModel dx="2261" dy="734" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="2223" dy="734" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="2LKEeEdWMR6j1Iujc3-p-8" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="2LKEeEdWMR6j1Iujc3-p-2" target="2LKEeEdWMR6j1Iujc3-p-7" edge="1">
+        <mxCell id="2LKEeEdWMR6j1Iujc3-p-8" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="Dj_vyTqYREw2iZnULHn3-3" target="2LKEeEdWMR6j1Iujc3-p-7" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="2LKEeEdWMR6j1Iujc3-p-9" value="defaultFlag:1" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="2LKEeEdWMR6j1Iujc3-p-8" vertex="1" connectable="0">
-          <mxGeometry x="-0.0276" relative="1" as="geometry">
+        <mxCell id="Dj_vyTqYREw2iZnULHn3-6" value="1" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="2LKEeEdWMR6j1Iujc3-p-8">
+          <mxGeometry x="-0.3849" y="-6" relative="1" as="geometry">
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
         <mxCell id="2LKEeEdWMR6j1Iujc3-p-11" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="2LKEeEdWMR6j1Iujc3-p-2" target="2LKEeEdWMR6j1Iujc3-p-10" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="2LKEeEdWMR6j1Iujc3-p-12" value="defaultFlag:0" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="2LKEeEdWMR6j1Iujc3-p-11" vertex="1" connectable="0">
+        <mxCell id="2LKEeEdWMR6j1Iujc3-p-12" value="0" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="2LKEeEdWMR6j1Iujc3-p-11" vertex="1" connectable="0">
           <mxGeometry x="-0.0039" y="3" relative="1" as="geometry">
             <mxPoint as="offset" />
           </mxGeometry>
@@ -63,23 +63,20 @@
         <mxCell id="2LKEeEdWMR6j1Iujc3-p-17" value="错误信息: 某某机器人已在方案名称里面" style="whiteSpace=wrap;html=1;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="346" y="910" width="235" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="2LKEeEdWMR6j1Iujc3-p-26" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="2LKEeEdWMR6j1Iujc3-p-20" target="2LKEeEdWMR6j1Iujc3-p-25" edge="1">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="2LKEeEdWMR6j1Iujc3-p-20" value="增加机器人互斥的校验" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+        <mxCell id="2LKEeEdWMR6j1Iujc3-p-20" value="支持多个默认方案同时保存" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="-25" y="910" width="230" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="Dj_vyTqYREw2iZnULHn3-2" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="2LKEeEdWMR6j1Iujc3-p-25" target="Dj_vyTqYREw2iZnULHn3-1">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="2LKEeEdWMR6j1Iujc3-p-25" value="增加机器人互斥的校验" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="-25" y="1050" width="230" height="60" as="geometry" />
         </mxCell>
         <mxCell id="2LKEeEdWMR6j1Iujc3-p-33" value="不需要校验机器互斥" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="570" y="740" width="230" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="Dj_vyTqYREw2iZnULHn3-1" value="支持多个默认方案同时保存" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="-25" y="1190" width="230" height="60" as="geometry" />
+        <mxCell id="Dj_vyTqYREw2iZnULHn3-4" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="2LKEeEdWMR6j1Iujc3-p-2" target="Dj_vyTqYREw2iZnULHn3-3">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="465" y="460" as="sourcePoint" />
+            <mxPoint x="280" y="600" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Dj_vyTqYREw2iZnULHn3-3" value="defaultFlag?" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="425" y="490" width="80" height="80" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
