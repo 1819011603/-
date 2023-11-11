@@ -1,9 +1,80 @@
-<mxfile host="app.diagrams.net" modified="2023-11-11T07:21:57.778Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36" version="22.1.0" etag="3FhK_apmiNDcPRgYb1bI" type="github">
+<mxfile host="app.diagrams.net" modified="2023-11-11T07:23:04.339Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36" etag="0f8R0HzfUcfd-BxWtt94" version="22.1.0" type="github">
   <diagram name="第 1 页" id="sePaThno3yrbPFlchOn1">
-    <mxGraphModel>
+    <mxGraphModel dx="2592" dy="903" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="CX-PVgMaYONu4-ApPANH-3" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="CX-PVgMaYONu4-ApPANH-7" target="CX-PVgMaYONu4-ApPANH-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="CX-PVgMaYONu4-ApPANH-4" value="defaultFlag:1" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="CX-PVgMaYONu4-ApPANH-3">
+          <mxGeometry x="-0.0276" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="CX-PVgMaYONu4-ApPANH-5" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="CX-PVgMaYONu4-ApPANH-7" target="CX-PVgMaYONu4-ApPANH-13">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="CX-PVgMaYONu4-ApPANH-6" value="defaultFlag:0" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="CX-PVgMaYONu4-ApPANH-5">
+          <mxGeometry x="-0.0039" y="3" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="CX-PVgMaYONu4-ApPANH-7" value="adoptAutoReplyByChannelConf" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="350" y="400" width="230" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="CX-PVgMaYONu4-ApPANH-8" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="CX-PVgMaYONu4-ApPANH-9" target="CX-PVgMaYONu4-ApPANH-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="CX-PVgMaYONu4-ApPANH-9" value="保存方案" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="350" y="270" width="230" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="CX-PVgMaYONu4-ApPANH-10" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="CX-PVgMaYONu4-ApPANH-11" target="CX-PVgMaYONu4-ApPANH-18">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="CX-PVgMaYONu4-ApPANH-11" value="默认方案" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="165" y="600" width="230" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="CX-PVgMaYONu4-ApPANH-12" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="CX-PVgMaYONu4-ApPANH-13" target="CX-PVgMaYONu4-ApPANH-23">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="CX-PVgMaYONu4-ApPANH-13" value="渠道方案" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="570" y="600" width="230" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="CX-PVgMaYONu4-ApPANH-14" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="CX-PVgMaYONu4-ApPANH-18" target="CX-PVgMaYONu4-ApPANH-19">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="CX-PVgMaYONu4-ApPANH-15" value="不符合" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="CX-PVgMaYONu4-ApPANH-14">
+          <mxGeometry x="-0.1863" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="CX-PVgMaYONu4-ApPANH-16" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="CX-PVgMaYONu4-ApPANH-18" target="CX-PVgMaYONu4-ApPANH-21">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="CX-PVgMaYONu4-ApPANH-17" value="符合" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="CX-PVgMaYONu4-ApPANH-16">
+          <mxGeometry x="-0.0404" y="-2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="CX-PVgMaYONu4-ApPANH-18" value="增加机器人互斥的校验和方案数校验" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="165" y="740" width="230" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="CX-PVgMaYONu4-ApPANH-19" value="错误信息: 某某机器人已在方案名称里面" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="346" y="910" width="235" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="CX-PVgMaYONu4-ApPANH-20" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="CX-PVgMaYONu4-ApPANH-21" target="CX-PVgMaYONu4-ApPANH-22">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="CX-PVgMaYONu4-ApPANH-21" value="增加机器人互斥的校验" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-25" y="910" width="230" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="CX-PVgMaYONu4-ApPANH-22" value="增加机器人互斥的校验" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-25" y="1050" width="230" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="CX-PVgMaYONu4-ApPANH-23" value="不需要校验机器互斥" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="570" y="740" width="230" height="60" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
