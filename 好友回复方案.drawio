@@ -1,17 +1,20 @@
-<mxfile host="app.diagrams.net" modified="2023-11-11T09:06:30.123Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36" etag="2_A6LPqaYL_udnRMT5B2" version="22.1.0" type="github">
+<mxfile host="app.diagrams.net" modified="2023-11-11T10:35:28.127Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36" etag="SD-x5UIZtjHEMSb4UQlE" version="22.1.0" type="github">
   <diagram name="第 1 页" id="sePaThno3yrbPFlchOn1">
-    <mxGraphModel dx="1529" dy="783" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1489" dy="783" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
         <mxCell id="CX-PVgMaYONu4-ApPANH-3" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="CX-PVgMaYONu4-ApPANH-7" target="CX-PVgMaYONu4-ApPANH-11">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="CX-PVgMaYONu4-ApPANH-5" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="CX-PVgMaYONu4-ApPANH-7" target="CX-PVgMaYONu4-ApPANH-13">
-          <mxGeometry relative="1" as="geometry" />
+        <mxCell id="CX-PVgMaYONu4-ApPANH-66" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.435;entryY=-0.083;entryDx=0;entryDy=0;entryPerimeter=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="CX-PVgMaYONu4-ApPANH-7">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="690" y="435.0466666666666" as="sourcePoint" />
+            <mxPoint x="835.0499999999997" y="590.0000000000002" as="targetPoint" />
+          </mxGeometry>
         </mxCell>
         <mxCell id="CX-PVgMaYONu4-ApPANH-7" value="查询方案接口拆分" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="350" y="400" width="230" height="60" as="geometry" />
+          <mxGeometry x="450" y="400" width="230" height="60" as="geometry" />
         </mxCell>
         <mxCell id="CX-PVgMaYONu4-ApPANH-10" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="CX-PVgMaYONu4-ApPANH-11" target="CX-PVgMaYONu4-ApPANH-18">
           <mxGeometry relative="1" as="geometry">
@@ -21,17 +24,21 @@
             </Array>
           </mxGeometry>
         </mxCell>
+        <mxCell id="CX-PVgMaYONu4-ApPANH-51" value="default" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="CX-PVgMaYONu4-ApPANH-10">
+          <mxGeometry x="0.4551" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
         <mxCell id="CX-PVgMaYONu4-ApPANH-30" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="CX-PVgMaYONu4-ApPANH-11" target="CX-PVgMaYONu4-ApPANH-29">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
+        <mxCell id="CX-PVgMaYONu4-ApPANH-52" value="id" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="CX-PVgMaYONu4-ApPANH-30">
+          <mxGeometry x="0.298" y="2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
         <mxCell id="CX-PVgMaYONu4-ApPANH-11" value="粗略信息接口" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="165" y="600" width="230" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="CX-PVgMaYONu4-ApPANH-12" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="CX-PVgMaYONu4-ApPANH-13" target="CX-PVgMaYONu4-ApPANH-23">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="CX-PVgMaYONu4-ApPANH-13" value="详情信息接口" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="570" y="600" width="230" height="60" as="geometry" />
         </mxCell>
         <mxCell id="CX-PVgMaYONu4-ApPANH-16" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="CX-PVgMaYONu4-ApPANH-18" target="CX-PVgMaYONu4-ApPANH-21">
           <mxGeometry relative="1" as="geometry" />
@@ -42,12 +49,6 @@
         <mxCell id="CX-PVgMaYONu4-ApPANH-21" value="将多个默认方案的机器人昵称wxId,异常标识,今日好友通过数,总共的好友通过数进行相加返回" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="30" y="880" width="230" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="CX-PVgMaYONu4-ApPANH-43" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="CX-PVgMaYONu4-ApPANH-23" target="CX-PVgMaYONu4-ApPANH-42">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="CX-PVgMaYONu4-ApPANH-23" value="根据方案id查询详情信息" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="570" y="740" width="230" height="60" as="geometry" />
-        </mxCell>
         <mxCell id="CX-PVgMaYONu4-ApPANH-37" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="CX-PVgMaYONu4-ApPANH-29" target="CX-PVgMaYONu4-ApPANH-36">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
@@ -57,8 +58,53 @@
         <mxCell id="CX-PVgMaYONu4-ApPANH-36" value="直接返回该方案的机器人昵称和wxId,异常标识,今日好友通过数,总共的好友通过数" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="290" y="880" width="230" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="CX-PVgMaYONu4-ApPANH-42" value="无需返回今日好友通过数,总共的好友通过数,其他信息和原接口相同" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="570" y="880" width="230" height="60" as="geometry" />
+        <mxCell id="CX-PVgMaYONu4-ApPANH-45" value="default, id?" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="255" y="675" width="50" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="CX-PVgMaYONu4-ApPANH-53" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="CX-PVgMaYONu4-ApPANH-57" target="CX-PVgMaYONu4-ApPANH-59">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="840" y="690" />
+              <mxPoint x="705" y="690" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="CX-PVgMaYONu4-ApPANH-54" value="default" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="CX-PVgMaYONu4-ApPANH-53">
+          <mxGeometry x="0.4551" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="CX-PVgMaYONu4-ApPANH-55" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="CX-PVgMaYONu4-ApPANH-57" target="CX-PVgMaYONu4-ApPANH-62">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="CX-PVgMaYONu4-ApPANH-56" value="id" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="CX-PVgMaYONu4-ApPANH-55">
+          <mxGeometry x="0.298" y="2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="CX-PVgMaYONu4-ApPANH-57" value="详情" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="725" y="590" width="230" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="CX-PVgMaYONu4-ApPANH-58" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="CX-PVgMaYONu4-ApPANH-59" target="CX-PVgMaYONu4-ApPANH-60">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="CX-PVgMaYONu4-ApPANH-59" value="默认方案" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="590" y="730" width="230" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="CX-PVgMaYONu4-ApPANH-60" value="将多个默认方案的机器人昵称wxId,异常标识,今日好友通过数,总共的好友通过数进行相加返回, 返回多个默认方案的List" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="590" y="870" width="230" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="CX-PVgMaYONu4-ApPANH-61" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="CX-PVgMaYONu4-ApPANH-62" target="CX-PVgMaYONu4-ApPANH-63">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="CX-PVgMaYONu4-ApPANH-62" value="渠道方案" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="850" y="730" width="230" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="CX-PVgMaYONu4-ApPANH-63" value="直接返回该方案的机器人昵称和wxId,异常标识,今日好友通过数,总共的好友通过数,返回单方案的List" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="850" y="870" width="230" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="CX-PVgMaYONu4-ApPANH-64" value="default, id?" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="815" y="665" width="50" height="50" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
